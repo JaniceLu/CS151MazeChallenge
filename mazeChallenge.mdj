@@ -14670,6 +14670,7 @@
 								},
 								{
 									"_type": "UMLClassView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuI/iUt6QOJHY=",
 									"_parent": {
 										"$ref": "AAAAAAFtf1SLwlNfyvo="
@@ -14900,6 +14901,8 @@
 								},
 								{
 									"_type": "UMLClassView",
+=======
+>>>>>>> Stashed changes
 									"_id": "AAAAAAFuI/jYDqzbsWM=",
 									"_parent": {
 										"$ref": "AAAAAAFtf1SLwlNfyvo="
@@ -15417,12 +15420,18 @@
 									}
 								},
 								{
+<<<<<<< Updated upstream
 									"_type": "UMLAssociationView",
 									"_id": "AAAAAAFuI/ltSLlt2VA=",
+=======
+									"_type": "UMLInterfaceView",
+									"_id": "AAAAAAFuJMaU7x+kfBQ=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SLwlNfyvo="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuI/ltR7lpBHc="
 									},
 									"subViews": [
@@ -15641,10 +15650,352 @@
 											"font": "Arial;13;0",
 											"width": 10,
 											"height": 10
+=======
+										"$ref": "AAAAAAFtf1EDn1HXFPQ="
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "AAAAAAFuJMaU7x+lwVY=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU7x+kfBQ="
+											},
+											"model": {
+												"$ref": "AAAAAAFtf1EDn1HXFPQ="
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuJMaU7x+mbcY=",
+													"_parent": {
+														"$ref": "AAAAAAFuJMaU7x+lwVY="
+													},
+													"font": "Arial;13;0",
+													"left": 77,
+													"top": 461,
+													"width": 91.0126953125,
+													"height": 13,
+													"text": "«interface»"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuJMaU7x+njGA=",
+													"_parent": {
+														"$ref": "AAAAAAFuJMaU7x+lwVY="
+													},
+													"font": "Arial;13;1",
+													"left": 77,
+													"top": 476,
+													"width": 91.0126953125,
+													"height": 13,
+													"text": "ActionListener"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuJMaU7x+ocTc=",
+													"_parent": {
+														"$ref": "AAAAAAFuJMaU7x+lwVY="
+													},
+													"font": "Arial;13;0",
+													"left": 77,
+													"top": 491,
+													"width": 91.0126953125,
+													"height": 13,
+													"text": "(from java)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuJMaU7x+pTUE=",
+													"_parent": {
+														"$ref": "AAAAAAFuJMaU7x+lwVY="
+													},
+													"visible": false,
+													"font": "Arial;13;0",
+													"left": -1796,
+													"top": 558,
+													"height": 13,
+													"horizontalAlignment": 1
+												}
+											],
+											"font": "Arial;13;0",
+											"left": 72,
+											"top": 456,
+											"width": 101.0126953125,
+											"height": 53,
+											"stereotypeLabel": {
+												"$ref": "AAAAAAFuJMaU7x+mbcY="
+											},
+											"nameLabel": {
+												"$ref": "AAAAAAFuJMaU7x+njGA="
+											},
+											"namespaceLabel": {
+												"$ref": "AAAAAAFuJMaU7x+ocTc="
+											},
+											"propertyLabel": {
+												"$ref": "AAAAAAFuJMaU7x+pTUE="
+											}
+										},
+										{
+											"_type": "UMLAttributeCompartmentView",
+											"_id": "AAAAAAFuJMaU7x+qcGg=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU7x+kfBQ="
+											},
+											"model": {
+												"$ref": "AAAAAAFtf1EDn1HXFPQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -898,
+											"top": 279,
+											"width": 10,
+											"height": 10
+										},
+										{
+											"_type": "UMLOperationCompartmentView",
+											"_id": "AAAAAAFuJMaU7x+rmNs=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU7x+kfBQ="
+											},
+											"model": {
+												"$ref": "AAAAAAFtf1EDn1HXFPQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -898,
+											"top": 279,
+											"width": 10,
+											"height": 10
+										},
+										{
+											"_type": "UMLReceptionCompartmentView",
+											"_id": "AAAAAAFuJMaU7x+sTuQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU7x+kfBQ="
+											},
+											"model": {
+												"$ref": "AAAAAAFtf1EDn1HXFPQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -898,
+											"top": 279,
+											"width": 10,
+											"height": 10
+										},
+										{
+											"_type": "UMLTemplateParameterCompartmentView",
+											"_id": "AAAAAAFuJMaU7x+tQYc=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU7x+kfBQ="
+											},
+											"model": {
+												"$ref": "AAAAAAFtf1EDn1HXFPQ="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": -898,
+											"top": 279,
+											"width": 10,
+											"height": 10
+										}
+									],
+									"font": "Arial;13;0",
+									"containerChangeable": true,
+									"left": 72,
+									"top": 456,
+									"width": 101.0126953125,
+									"height": 64,
+									"showNamespace": true,
+									"nameCompartment": {
+										"$ref": "AAAAAAFuJMaU7x+lwVY="
+									},
+									"suppressAttributes": true,
+									"suppressOperations": true,
+									"attributeCompartment": {
+										"$ref": "AAAAAAFuJMaU7x+qcGg="
+									},
+									"operationCompartment": {
+										"$ref": "AAAAAAFuJMaU7x+rmNs="
+									},
+									"receptionCompartment": {
+										"$ref": "AAAAAAFuJMaU7x+sTuQ="
+									},
+									"templateParameterCompartment": {
+										"$ref": "AAAAAAFuJMaU7x+tQYc="
+									}
+								},
+								{
+									"_type": "UMLInterfaceRealizationView",
+									"_id": "AAAAAAFuJMaU8x/CbIc=",
+									"_parent": {
+										"$ref": "AAAAAAFtf1SLwlNfyvo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuGUD5gqrLmUo="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMaU8x/Dy0U=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGUD5gqrLmUo="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 679,
+											"top": 489,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"edgePosition": 1
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMaU8x/EjXU=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGUD5gqrLmUo="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 679,
+											"top": 504,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"edgePosition": 1
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMaU8x/FvIY=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGUD5gqrLmUo="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 680,
+											"top": 459,
+											"height": 13,
+											"alpha": -1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMaU8x/CbIc="
+											},
+											"edgePosition": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"head": {
+										"$ref": "AAAAAAFuJMaU7x+kfBQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAFuGTa8e44y668="
+									},
+									"points": "680:447;680:480;172:480",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuJMaU8x/Dy0U="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuJMaU8x/EjXU="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuJMaU8x/FvIY="
+									}
+								},
+								{
+									"_type": "UMLInterfaceRealizationView",
+									"_id": "AAAAAAFuJMcrYDpEhlE=",
+									"_parent": {
+										"$ref": "AAAAAAFtf1SLwlNfyvo="
+									},
+									"model": {
+										"$ref": "AAAAAAFuJMcrYDpDTEc="
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMcrYDpFq+0=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"model": {
+												"$ref": "AAAAAAFuJMcrYDpDTEc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 118,
+											"top": 1089,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"edgePosition": 1
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMcrYDpGtFo=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"model": {
+												"$ref": "AAAAAAFuJMcrYDpDTEc="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 103,
+											"top": 1089,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"edgePosition": 1
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuJMcrYDpH+XU=",
+											"_parent": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"model": {
+												"$ref": "AAAAAAFuJMcrYDpDTEc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 148,
+											"top": 1090,
+											"height": 13,
+											"alpha": -1.5707963267948966,
+											"distance": 15,
+											"hostEdge": {
+												"$ref": "AAAAAAFuJMcrYDpEhlE="
+											},
+											"edgePosition": 1
+>>>>>>> Stashed changes
+										}
+									],
+									"font": "Arial;13;0",
+									"head": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuI/iUt6QOJHY="
 									},
 									"tail": {
@@ -16075,6 +16426,46 @@
 									},
 									"target": {
 										"$ref": "AAAAAAFuDwcWGNtUJdo="
+=======
+										"$ref": "AAAAAAFuJMaU7x+kfBQ="
+									},
+									"tail": {
+										"$ref": "AAAAAAFuI55i3oDcjdg="
+									},
+									"points": "216:1096;133:1096;133:519",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuJMcrYDpFq+0="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuJMcrYDpGtFo="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuJMcrYDpH+XU="
+									}
+								}
+							]
+						},
+						{
+							"_type": "UMLClass",
+							"_id": "AAAAAAFuDuqUC9rDWGw=",
+							"_parent": {
+								"$ref": "AAAAAAFtf02hBVBvdnI="
+							},
+							"name": "MazeView",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAFuDy+72f3pBzQ=",
+									"_parent": {
+										"$ref": "AAAAAAFuDuqUC9rDWGw="
+									},
+									"source": {
+										"$ref": "AAAAAAFuDuqUC9rDWGw="
+									},
+									"target": {
+										"$ref": "AAAAAAFuDwcWGNtUJdo="
+>>>>>>> Stashed changes
 									}
 								},
 								{
@@ -20251,6 +20642,7 @@
 								"$ref": "AAAAAAFtf02hBVBvdnI="
 							},
 							"name": "RoomView",
+<<<<<<< Updated upstream
 							"ownedElements": [
 								{
 									"_type": "UMLAssociation",
@@ -20284,6 +20676,8 @@
 									}
 								}
 							],
+=======
+>>>>>>> Stashed changes
 							"attributes": [
 								{
 									"_type": "UMLAttribute",
@@ -20908,7 +21302,11 @@
 								"$ref": "AAAAAAFtf06LglCpxOk="
 							},
 							"name": "ClassDiagram1",
+<<<<<<< Updated upstream
 							"documentation": "Edit History:\n10/31/2019: Initial turn in ",
+=======
+							"documentation": "Edit History:\n10/31/2019: Initial turn in \n11/5/2019: Deleted room and created two associations to position from Maze",
+>>>>>>> Stashed changes
 							"ownedViews": [
 								{
 									"_type": "UMLClassView",
@@ -20917,6 +21315,7 @@
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuDsr7kNlNcHw="
 									},
 									"subViews": [
@@ -21144,20 +21543,33 @@
 									},
 									"model": {
 										"$ref": "AAAAAAFuDsvHBNmVEJ0="
+=======
+										"$ref": "AAAAAAFuDsr7kNlNcHw="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "UMLNameCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuDzT2k//OucI=",
 											"_parent": {
 												"$ref": "AAAAAAFuDzT2k//Ndms="
 											},
 											"model": {
 												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+=======
+											"_id": "AAAAAAFuDsr7kNlQ8lk=",
+											"_parent": {
+												"$ref": "AAAAAAFuDsr7kNlPIZM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsr7kNlNcHw="
+>>>>>>> Stashed changes
 											},
 											"subViews": [
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuDzT2k//PosU=",
 													"_parent": {
 														"$ref": "AAAAAAFuDzT2k//OucI="
@@ -21167,10 +21579,22 @@
 													"font": "Arial;13;0",
 													"left": 66,
 													"top": -776,
+=======
+													"_id": "AAAAAAFuDsr7kNlRPuM=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kNlQ8lk="
+													},
+													"visible": false,
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;0",
+													"left": 224,
+													"top": -160,
+>>>>>>> Stashed changes
 													"height": 13
 												},
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuDzT2k//QqkQ=",
 													"_parent": {
 														"$ref": "AAAAAAFuDzT2k//OucI="
@@ -21208,10 +21632,51 @@
 													"font": "Arial;13;0",
 													"left": 66,
 													"top": -776,
+=======
+													"_id": "AAAAAAFuDsr7kNlSD9M=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kNlQ8lk="
+													},
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;1",
+													"left": 548,
+													"top": 319,
+													"width": 154.27978515625,
+													"height": 13,
+													"text": "Maze"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuDsr7kNlTcis=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kNlQ8lk="
+													},
+													"visible": false,
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;0",
+													"left": 224,
+													"top": -160,
+													"width": 89.578125,
+													"height": 13,
+													"text": "(from business)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuDsr7kdlUWho=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kNlQ8lk="
+													},
+													"visible": false,
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;0",
+													"left": 224,
+													"top": -160,
+>>>>>>> Stashed changes
 													"height": 13,
 													"horizontalAlignment": 1
 												}
 											],
+<<<<<<< Updated upstream
 											"fillColor": "#91ffec",
 											"font": "Arial;13;0",
 											"left": 562,
@@ -21229,20 +21694,49 @@
 											},
 											"propertyLabel": {
 												"$ref": "AAAAAAFuDzT2k//SpSM="
+=======
+											"fillColor": "#ffa3ff",
+											"font": "Arial;13;0",
+											"left": 543,
+											"top": 312,
+											"width": 164.27978515625,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "AAAAAAFuDsr7kNlRPuM="
+											},
+											"nameLabel": {
+												"$ref": "AAAAAAFuDsr7kNlSD9M="
+											},
+											"namespaceLabel": {
+												"$ref": "AAAAAAFuDsr7kNlTcis="
+											},
+											"propertyLabel": {
+												"$ref": "AAAAAAFuDsr7kdlUWho="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "UMLAttributeCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuDzT2k//TbJw=",
 											"_parent": {
 												"$ref": "AAAAAAFuDzT2k//Ndms="
 											},
 											"model": {
 												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+=======
+											"_id": "AAAAAAFuDsr7kdlVwSI=",
+											"_parent": {
+												"$ref": "AAAAAAFuDsr7kNlPIZM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsr7kNlNcHw="
+>>>>>>> Stashed changes
 											},
 											"subViews": [
 												{
 													"_type": "UMLAttributeView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGeG4hf88uU0=",
 													"_parent": {
 														"$ref": "AAAAAAFuDzT2k//TbJw="
@@ -21498,43 +21992,190 @@
 									},
 									"propertyLabel": {
 										"$ref": "AAAAAAFuDzT2lP/aXrM="
+=======
+													"_id": "AAAAAAFuGbw5lNQClzc=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kdlVwSI="
+													},
+													"model": {
+														"$ref": "AAAAAAFuGbw5adP/ziA="
+													},
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;0",
+													"left": 548,
+													"top": 342,
+													"width": 154.27978515625,
+													"height": 13,
+													"text": "-exitDistance: int",
+													"horizontalAlignment": 0
+												}
+											],
+											"fillColor": "#ffa3ff",
+											"font": "Arial;13;0",
+											"left": 543,
+											"top": 337,
+											"width": 164.27978515625,
+											"height": 23
+										},
+										{
+											"_type": "UMLOperationCompartmentView",
+											"_id": "AAAAAAFuDsr7kdlWfrU=",
+											"_parent": {
+												"$ref": "AAAAAAFuDsr7kNlPIZM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsr7kNlNcHw="
+											},
+											"subViews": [
+												{
+													"_type": "UMLOperationView",
+													"_id": "AAAAAAFuI8b4mzC9ino=",
+													"_parent": {
+														"$ref": "AAAAAAFuDsr7kdlWfrU="
+													},
+													"model": {
+														"$ref": "AAAAAAFuI8b4iTC6T3w="
+													},
+													"fillColor": "#ffa3ff",
+													"font": "Arial;13;0",
+													"left": 548,
+													"top": 365,
+													"width": 154.27978515625,
+													"height": 13,
+													"text": "-move(heading: Heading)",
+													"horizontalAlignment": 0
+												}
+											],
+											"fillColor": "#ffa3ff",
+											"font": "Arial;13;0",
+											"left": 543,
+											"top": 360,
+											"width": 164.27978515625,
+											"height": 23
+										},
+										{
+											"_type": "UMLReceptionCompartmentView",
+											"_id": "AAAAAAFuDsr7kdlXJgo=",
+											"_parent": {
+												"$ref": "AAAAAAFuDsr7kNlPIZM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsr7kNlNcHw="
+											},
+											"visible": false,
+											"fillColor": "#ffa3ff",
+											"font": "Arial;13;0",
+											"left": 112,
+											"top": 16,
+											"width": 10,
+											"height": 10
+										},
+										{
+											"_type": "UMLTemplateParameterCompartmentView",
+											"_id": "AAAAAAFuDsr7kdlY4hg=",
+											"_parent": {
+												"$ref": "AAAAAAFuDsr7kNlPIZM="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsr7kNlNcHw="
+											},
+											"visible": false,
+											"fillColor": "#ffa3ff",
+											"font": "Arial;13;0",
+											"left": 112,
+											"top": 16,
+											"width": 10,
+											"height": 10
+										}
+									],
+									"fillColor": "#ffa3ff",
+									"font": "Arial;13;0",
+									"containerChangeable": true,
+									"left": 543,
+									"top": 312,
+									"width": 164.27978515625,
+									"height": 71,
+									"nameCompartment": {
+										"$ref": "AAAAAAFuDsr7kNlQ8lk="
+									},
+									"attributeCompartment": {
+										"$ref": "AAAAAAFuDsr7kdlVwSI="
+									},
+									"operationCompartment": {
+										"$ref": "AAAAAAFuDsr7kdlWfrU="
+									},
+									"receptionCompartment": {
+										"$ref": "AAAAAAFuDsr7kdlXJgo="
+									},
+									"templateParameterCompartment": {
+										"$ref": "AAAAAAFuDsr7kdlY4hg="
+>>>>>>> Stashed changes
 									}
 								},
 								{
 									"_type": "UMLClassView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuGaDnHKQvW+8=",
+=======
+									"_id": "AAAAAAFuDzT2k//Ndms=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGY1iT42NONw="
+=======
+										"$ref": "AAAAAAFuDsvHBNmVEJ0="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "UMLNameCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnHKQweq0=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnHKQvW+8="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGY1iT42NONw="
+=======
+											"_id": "AAAAAAFuDzT2k//OucI=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2k//Ndms="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+>>>>>>> Stashed changes
 											},
 											"subViews": [
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGaDnHKQx9w8=",
 													"_parent": {
 														"$ref": "AAAAAAFuGaDnHKQweq0="
+=======
+													"_id": "AAAAAAFuDzT2k//PosU=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//OucI="
+>>>>>>> Stashed changes
 													},
 													"visible": false,
 													"fillColor": "#91ffec",
 													"font": "Arial;13;0",
+<<<<<<< Updated upstream
 													"left": -368,
 													"top": 58,
+=======
+													"left": 66,
+													"top": -776,
+>>>>>>> Stashed changes
 													"height": 13
 												},
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGaDnHKQyLQY=",
 													"_parent": {
 														"$ref": "AAAAAAFuGaDnHKQweq0="
@@ -21558,26 +22199,63 @@
 													"left": 277,
 													"top": 198,
 													"width": 98.947265625,
+=======
+													"_id": "AAAAAAFuDzT2k//QqkQ=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//OucI="
+													},
+													"fillColor": "#91ffec",
+													"font": "Arial;13;3",
+													"left": 567,
+													"top": 183,
+													"width": 115.9716796875,
+													"height": 13,
+													"text": "Model"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuDzT2k//RPaE=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//OucI="
+													},
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": 567,
+													"top": 198,
+													"width": 115.9716796875,
+>>>>>>> Stashed changes
 													"height": 13,
 													"text": "(from framework)"
 												},
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGaDnHaQ0vH8=",
 													"_parent": {
 														"$ref": "AAAAAAFuGaDnHKQweq0="
+=======
+													"_id": "AAAAAAFuDzT2k//SpSM=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//OucI="
+>>>>>>> Stashed changes
 													},
 													"visible": false,
 													"fillColor": "#91ffec",
 													"font": "Arial;13;0",
+<<<<<<< Updated upstream
 													"left": -368,
 													"top": 58,
+=======
+													"left": 66,
+													"top": -776,
+>>>>>>> Stashed changes
 													"height": 13,
 													"horizontalAlignment": 1
 												}
 											],
 											"fillColor": "#91ffec",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": 272,
 											"top": 176,
 											"width": 108.947265625,
@@ -21593,10 +22271,28 @@
 											},
 											"propertyLabel": {
 												"$ref": "AAAAAAFuGaDnHaQ0vH8="
+=======
+											"left": 562,
+											"top": 176,
+											"width": 125.9716796875,
+											"height": 40,
+											"stereotypeLabel": {
+												"$ref": "AAAAAAFuDzT2k//PosU="
+											},
+											"nameLabel": {
+												"$ref": "AAAAAAFuDzT2k//QqkQ="
+											},
+											"namespaceLabel": {
+												"$ref": "AAAAAAFuDzT2k//RPaE="
+											},
+											"propertyLabel": {
+												"$ref": "AAAAAAFuDzT2k//SpSM="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "UMLAttributeCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnHaQ10Bc=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnHKQvW+8="
@@ -21610,20 +22306,85 @@
 											"left": 272,
 											"top": 208,
 											"width": 108.947265625,
+=======
+											"_id": "AAAAAAFuDzT2k//TbJw=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2k//Ndms="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+											},
+											"subViews": [
+												{
+													"_type": "UMLAttributeView",
+													"_id": "AAAAAAFuGeG4hf88uU0=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//TbJw="
+													},
+													"model": {
+														"$ref": "AAAAAAFuGeFcwf5ol7Y="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": 567,
+													"top": 173,
+													"width": 135.12255859375,
+													"height": 13,
+													"text": "+fileName: String = null",
+													"horizontalAlignment": 0
+												},
+												{
+													"_type": "UMLAttributeView",
+													"_id": "AAAAAAFuGeG4hv8/eEU=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//TbJw="
+													},
+													"model": {
+														"$ref": "AAAAAAFuGeF2GP7JjMw="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": 567,
+													"top": 188,
+													"width": 205.98779296875,
+													"height": 13,
+													"text": "+unsavedChanges: Boolean = false",
+													"horizontalAlignment": 0
+												}
+											],
+											"visible": false,
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": 562,
+											"top": 168,
+											"width": 125.9716796875,
+>>>>>>> Stashed changes
 											"height": 10
 										},
 										{
 											"_type": "UMLOperationCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnHaQ2Lmg=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnHKQvW+8="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGY1iT42NONw="
+=======
+											"_id": "AAAAAAFuDzT2k//Uh/w=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2k//Ndms="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+>>>>>>> Stashed changes
 											},
 											"subViews": [
 												{
 													"_type": "UMLOperationView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGaDnY6SbhmY=",
 													"_parent": {
 														"$ref": "AAAAAAFuGaDnHaQ2Lmg="
@@ -21639,48 +22400,118 @@
 													"width": 98.947265625,
 													"height": 13,
 													"text": "+execute()",
+=======
+													"_id": "AAAAAAFuDzT2sf/+PBA=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//Uh/w="
+													},
+													"model": {
+														"$ref": "AAAAAAFuDswl2Nn6bMI="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;2",
+													"left": 567,
+													"top": 173,
+													"width": 115.9716796875,
+													"height": 13,
+													"text": "+changed()",
+													"horizontalAlignment": 0
+												},
+												{
+													"_type": "UMLOperationView",
+													"_id": "AAAAAAFuI5DhAGNGfE0=",
+													"_parent": {
+														"$ref": "AAAAAAFuDzT2k//Uh/w="
+													},
+													"model": {
+														"$ref": "AAAAAAFuI4jK1TTMtJM="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": 567,
+													"top": 188,
+													"width": 115.9716796875,
+													"height": 13,
+													"text": "+copy(other: Model)",
+>>>>>>> Stashed changes
 													"horizontalAlignment": 0
 												}
 											],
 											"visible": false,
 											"fillColor": "#91ffec",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": 272,
 											"top": 208,
 											"width": 108.947265625,
+=======
+											"left": 562,
+											"top": 168,
+											"width": 125.9716796875,
+>>>>>>> Stashed changes
 											"height": 10
 										},
 										{
 											"_type": "UMLReceptionCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnHaQ3h54=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnHKQvW+8="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGY1iT42NONw="
+=======
+											"_id": "AAAAAAFuDzT2k//V9Og=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2k//Ndms="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"fillColor": "#91ffec",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": -184,
 											"top": 21,
+=======
+											"left": 33,
+											"top": -388,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										},
 										{
 											"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnHaQ4ZCM=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnHKQvW+8="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGY1iT42NONw="
+=======
+											"_id": "AAAAAAFuDzT2k//WZK0=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2k//Ndms="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDsvHBNmVEJ0="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"fillColor": "#91ffec",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": -184,
 											"top": 21,
+=======
+											"left": 33,
+											"top": -388,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										}
@@ -21688,6 +22519,7 @@
 									"fillColor": "#91ffec",
 									"font": "Arial;13;0",
 									"containerChangeable": true,
+<<<<<<< Updated upstream
 									"left": 272,
 									"top": 176,
 									"width": 108.947265625,
@@ -21695,10 +22527,20 @@
 									"showNamespace": true,
 									"nameCompartment": {
 										"$ref": "AAAAAAFuGaDnHKQweq0="
+=======
+									"left": 562,
+									"top": 176,
+									"width": 125.9716796875,
+									"height": 68,
+									"showNamespace": true,
+									"nameCompartment": {
+										"$ref": "AAAAAAFuDzT2k//OucI="
+>>>>>>> Stashed changes
 									},
 									"suppressAttributes": true,
 									"suppressOperations": true,
 									"attributeCompartment": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGaDnHaQ10Bc="
 									},
 									"operationCompartment": {
@@ -21714,15 +22556,37 @@
 								{
 									"_type": "UMLAssociationView",
 									"_id": "AAAAAAFuGaDnH6Q5FAs=",
+=======
+										"$ref": "AAAAAAFuDzT2k//TbJw="
+									},
+									"operationCompartment": {
+										"$ref": "AAAAAAFuDzT2k//Uh/w="
+									},
+									"receptionCompartment": {
+										"$ref": "AAAAAAFuDzT2k//V9Og="
+									},
+									"templateParameterCompartment": {
+										"$ref": "AAAAAAFuDzT2k//WZK0="
+									}
+								},
+								{
+									"_type": "UMLGeneralizationView",
+									"_id": "AAAAAAFuDzT2lP/XzfA=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGY1iT42OVPE="
+=======
+										"$ref": "AAAAAAFuDswBe9noTKA="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnH6Q6qCw=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
@@ -21734,16 +22598,34 @@
 											"font": "Arial;13;0",
 											"left": 471,
 											"top": 189,
+=======
+											"_id": "AAAAAAFuDzT2lP/Yq60=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDswBe9noTKA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 609,
+											"top": 270,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+=======
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnH6Q7HHs=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
@@ -21755,16 +22637,34 @@
 											"font": "Arial;13;0",
 											"left": 471,
 											"top": 174,
+=======
+											"_id": "AAAAAAFuDzT2lP/Za8E=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDswBe9noTKA="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 594,
+											"top": 270,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+=======
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGaDnH6Q8is8=",
 											"_parent": {
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
@@ -21776,10 +22676,24 @@
 											"font": "Arial;13;0",
 											"left": 471,
 											"top": 219,
+=======
+											"_id": "AAAAAAFuDzT2lP/aXrM=",
+											"_parent": {
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+											},
+											"model": {
+												"$ref": "AAAAAAFuDswBe9noTKA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 638,
+											"top": 271,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGaDnH6Q5FAs="
 											},
 											"edgePosition": 1
@@ -21936,6 +22850,11 @@
 											"font": "Arial;13;0",
 											"width": 10,
 											"height": 10
+=======
+												"$ref": "AAAAAAFuDzT2lP/XzfA="
+											},
+											"edgePosition": 1
+>>>>>>> Stashed changes
 										}
 									],
 									"font": "Arial;13;0",
@@ -21943,6 +22862,7 @@
 										"$ref": "AAAAAAFuDzT2k//Ndms="
 									},
 									"tail": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGaDnHKQvW+8="
 									},
 									"lineStyle": 1,
@@ -21980,30 +22900,63 @@
 									},
 									"headQualifiersCompartment": {
 										"$ref": "AAAAAAFuGaDnIKRECWM="
+=======
+										"$ref": "AAAAAAFuDsr7kNlPIZM="
+									},
+									"lineStyle": 1,
+									"points": "624:311;624:244",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuDzT2lP/Yq60="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuDzT2lP/Za8E="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuDzT2lP/aXrM="
+>>>>>>> Stashed changes
 									}
 								},
 								{
 									"_type": "UMLClassView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuGeWv7QRrJv0=",
+=======
+									"_id": "AAAAAAFuGaDnHKQvW+8=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGeWv7QRp/G0="
+=======
+										"$ref": "AAAAAAFuGY1iT42NONw="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "UMLNameCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeWv7QRsnao=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeWv7QRrJv0="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGeWv7QRp/G0="
+=======
+											"_id": "AAAAAAFuGaDnHKQweq0=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnHKQvW+8="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42NONw="
+>>>>>>> Stashed changes
 											},
 											"subViews": [
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGeWv7QRtwxI=",
 													"_parent": {
 														"$ref": "AAAAAAFuGeWv7QRsnao="
@@ -22013,10 +22966,22 @@
 													"font": "Arial;13;0",
 													"left": -56,
 													"top": -144,
+=======
+													"_id": "AAAAAAFuGaDnHKQx9w8=",
+													"_parent": {
+														"$ref": "AAAAAAFuGaDnHKQweq0="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": -368,
+													"top": 58,
+>>>>>>> Stashed changes
 													"height": 13
 												},
 												{
 													"_type": "LabelView",
+<<<<<<< Updated upstream
 													"_id": "AAAAAAFuGeWv7QRu1qc=",
 													"_parent": {
 														"$ref": "AAAAAAFuGeWv7QRsnao="
@@ -22055,10 +23020,50 @@
 													"font": "Arial;13;0",
 													"left": -56,
 													"top": -144,
+=======
+													"_id": "AAAAAAFuGaDnHKQyLQY=",
+													"_parent": {
+														"$ref": "AAAAAAFuGaDnHKQweq0="
+													},
+													"fillColor": "#91ffec",
+													"font": "Arial;13;3",
+													"left": 277,
+													"top": 183,
+													"width": 98.947265625,
+													"height": 13,
+													"text": "Command"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuGaDnHaQzWeg=",
+													"_parent": {
+														"$ref": "AAAAAAFuGaDnHKQweq0="
+													},
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": 277,
+													"top": 198,
+													"width": 98.947265625,
+													"height": 13,
+													"text": "(from framework)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "AAAAAAFuGaDnHaQ0vH8=",
+													"_parent": {
+														"$ref": "AAAAAAFuGaDnHKQweq0="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;0",
+													"left": -368,
+													"top": 58,
+>>>>>>> Stashed changes
 													"height": 13,
 													"horizontalAlignment": 1
 												}
 											],
+<<<<<<< Updated upstream
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
 											"left": 556,
@@ -22076,10 +23081,30 @@
 											},
 											"propertyLabel": {
 												"$ref": "AAAAAAFuGeWv7QRwhHI="
+=======
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": 272,
+											"top": 176,
+											"width": 108.947265625,
+											"height": 40,
+											"stereotypeLabel": {
+												"$ref": "AAAAAAFuGaDnHKQx9w8="
+											},
+											"nameLabel": {
+												"$ref": "AAAAAAFuGaDnHKQyLQY="
+											},
+											"namespaceLabel": {
+												"$ref": "AAAAAAFuGaDnHaQzWeg="
+											},
+											"propertyLabel": {
+												"$ref": "AAAAAAFuGaDnHaQ0vH8="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "UMLAttributeCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeWv7QRx65o=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeWv7QRrJv0="
@@ -22147,10 +23172,64 @@
 											"left": 732,
 											"top": 639,
 											"width": 137,
+=======
+											"_id": "AAAAAAFuGaDnHaQ10Bc=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnHKQvW+8="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42NONw="
+											},
+											"visible": false,
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": 272,
+											"top": 208,
+											"width": 108.947265625,
+											"height": 10
+										},
+										{
+											"_type": "UMLOperationCompartmentView",
+											"_id": "AAAAAAFuGaDnHaQ2Lmg=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnHKQvW+8="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42NONw="
+											},
+											"subViews": [
+												{
+													"_type": "UMLOperationView",
+													"_id": "AAAAAAFuGaDnY6SbhmY=",
+													"_parent": {
+														"$ref": "AAAAAAFuGaDnHaQ2Lmg="
+													},
+													"model": {
+														"$ref": "AAAAAAFuGY1iT42UO1Q="
+													},
+													"visible": false,
+													"fillColor": "#91ffec",
+													"font": "Arial;13;2",
+													"left": 229,
+													"top": 317,
+													"width": 98.947265625,
+													"height": 13,
+													"text": "+execute()",
+													"horizontalAlignment": 0
+												}
+											],
+											"visible": false,
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": 272,
+											"top": 208,
+											"width": 108.947265625,
+>>>>>>> Stashed changes
 											"height": 10
 										},
 										{
 											"_type": "UMLReceptionCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeWv7QRzihA=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeWv7QRrJv0="
@@ -22163,11 +23242,26 @@
 											"font": "Arial;13;0",
 											"left": 120,
 											"top": 56,
+=======
+											"_id": "AAAAAAFuGaDnHaQ3h54=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnHKQvW+8="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42NONw="
+											},
+											"visible": false,
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": -184,
+											"top": 21,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										},
 										{
 											"_type": "UMLTemplateParameterCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeWv7QR0Guc=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeWv7QRrJv0="
@@ -22180,10 +23274,25 @@
 											"font": "Arial;13;0",
 											"left": 120,
 											"top": 56,
+=======
+											"_id": "AAAAAAFuGaDnHaQ4ZCM=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnHKQvW+8="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42NONw="
+											},
+											"visible": false,
+											"fillColor": "#91ffec",
+											"font": "Arial;13;0",
+											"left": -184,
+											"top": 21,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										}
 									],
+<<<<<<< Updated upstream
 									"fillColor": "#ffa3ff",
 									"font": "Arial;13;0",
 									"containerChangeable": true,
@@ -22206,20 +23315,55 @@
 									},
 									"templateParameterCompartment": {
 										"$ref": "AAAAAAFuGeWv7QR0Guc="
+=======
+									"fillColor": "#91ffec",
+									"font": "Arial;13;0",
+									"containerChangeable": true,
+									"left": 272,
+									"top": 176,
+									"width": 108.947265625,
+									"height": 73,
+									"showNamespace": true,
+									"nameCompartment": {
+										"$ref": "AAAAAAFuGaDnHKQweq0="
+									},
+									"suppressAttributes": true,
+									"suppressOperations": true,
+									"attributeCompartment": {
+										"$ref": "AAAAAAFuGaDnHaQ10Bc="
+									},
+									"operationCompartment": {
+										"$ref": "AAAAAAFuGaDnHaQ2Lmg="
+									},
+									"receptionCompartment": {
+										"$ref": "AAAAAAFuGaDnHaQ3h54="
+									},
+									"templateParameterCompartment": {
+										"$ref": "AAAAAAFuGaDnHaQ4ZCM="
+>>>>>>> Stashed changes
 									}
 								},
 								{
 									"_type": "UMLAssociationView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuGeaa7wVL34A=",
+=======
+									"_id": "AAAAAAFuGaDnH6Q5FAs=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGeaa7wVHWz4="
+=======
+										"$ref": "AAAAAAFuGY1iT42OVPE="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVM6/c=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22231,16 +23375,34 @@
 											"font": "Arial;13;0",
 											"left": 638,
 											"top": 408,
+=======
+											"_id": "AAAAAAFuGaDnH6Q6qCw=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42OVPE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 471,
+											"top": 189,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVN/dQ=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22252,16 +23414,34 @@
 											"font": "Arial;13;0",
 											"left": 653,
 											"top": 408,
+=======
+											"_id": "AAAAAAFuGaDnH6Q7HHs=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42OVPE="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 471,
+											"top": 174,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVOUGU=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22273,16 +23453,34 @@
 											"font": "Arial;13;0",
 											"left": 609,
 											"top": 409,
+=======
+											"_id": "AAAAAAFuGaDnH6Q8is8=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42OVPE="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 471,
+											"top": 219,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVP5MY=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22294,16 +23492,34 @@
 											"font": "Arial;13;0",
 											"left": 639,
 											"top": 402,
+=======
+											"_id": "AAAAAAFuGaDnH6Q92bE=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42PIbM="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 406,
+											"top": 189,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.5235987755982988,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVQFaM=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22315,16 +23531,34 @@
 											"font": "Arial;13;0",
 											"left": 652,
 											"top": 405,
+=======
+											"_id": "AAAAAAFuGaDnH6Q+qB8=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42PIbM="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 409,
+											"top": 176,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVRn0M=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22336,16 +23570,34 @@
 											"font": "Arial;13;0",
 											"left": 611,
 											"top": 398,
+=======
+											"_id": "AAAAAAFuGaDnH6Q/e0A=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42PIbM="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 402,
+											"top": 217,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.5235987755982988,
 											"distance": 25,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVSxEM=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22378,15 +23630,54 @@
 											"font": "Arial;13;0",
 											"left": 652,
 											"top": 412,
+=======
+											"_id": "AAAAAAFuGaDnH6RATMk=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42QEfc="
+											},
+											"font": "Arial;13;0",
+											"left": 513,
+											"top": 189,
+											"width": 42.63720703125,
+											"height": 13,
+											"alpha": -0.5235987755982988,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"text": "#model"
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuGaDnH6RBdMA=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42QEfc="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 532,
+											"top": 175,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGeaa7wVL34A="
+=======
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVU4QQ=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
@@ -22414,6 +23705,35 @@
 											},
 											"model": {
 												"$ref": "AAAAAAFuGeaa7wVICvs="
+=======
+											"_id": "AAAAAAFuGaDnH6RCaTQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42QEfc="
+											},
+											"font": "Arial;13;0",
+											"left": 536,
+											"top": 216,
+											"width": 7.22998046875,
+											"height": 13,
+											"alpha": 0.5235987755982988,
+											"distance": 25,
+											"hostEdge": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"text": "1"
+										},
+										{
+											"_type": "UMLQualifierCompartmentView",
+											"_id": "AAAAAAFuGaDnH6RDXvQ=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42PIbM="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -22422,12 +23742,21 @@
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGeaa8AVW/EY=",
 											"_parent": {
 												"$ref": "AAAAAAFuGeaa7wVL34A="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGeaa7wVJoQI="
+=======
+											"_id": "AAAAAAFuGaDnIKRECWM=",
+											"_parent": {
+												"$ref": "AAAAAAFuGaDnH6Q5FAs="
+											},
+											"model": {
+												"$ref": "AAAAAAFuGY1iT42QEfc="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -22437,6 +23766,7 @@
 									],
 									"font": "Arial;13;0",
 									"head": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGeWv7QRrJv0="
 									},
 									"tail": {
@@ -22477,6 +23807,48 @@
 									},
 									"headQualifiersCompartment": {
 										"$ref": "AAAAAAFuGeaa8AVW/EY="
+=======
+										"$ref": "AAAAAAFuDzT2k//Ndms="
+									},
+									"tail": {
+										"$ref": "AAAAAAFuGaDnHKQvW+8="
+									},
+									"lineStyle": 1,
+									"points": "381:211;561:210",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q6qCw="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q7HHs="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q8is8="
+									},
+									"tailRoleNameLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q92bE="
+									},
+									"tailPropertyLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q+qB8="
+									},
+									"tailMultiplicityLabel": {
+										"$ref": "AAAAAAFuGaDnH6Q/e0A="
+									},
+									"headRoleNameLabel": {
+										"$ref": "AAAAAAFuGaDnH6RATMk="
+									},
+									"headPropertyLabel": {
+										"$ref": "AAAAAAFuGaDnH6RBdMA="
+									},
+									"headMultiplicityLabel": {
+										"$ref": "AAAAAAFuGaDnH6RCaTQ="
+									},
+									"tailQualifiersCompartment": {
+										"$ref": "AAAAAAFuGaDnH6RDXvQ="
+									},
+									"headQualifiersCompartment": {
+										"$ref": "AAAAAAFuGaDnIKRECWM="
+>>>>>>> Stashed changes
 									}
 								},
 								{
@@ -22509,7 +23881,11 @@
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;0",
 													"left": 8,
+<<<<<<< Updated upstream
 													"top": 112,
+=======
+													"top": -208,
+>>>>>>> Stashed changes
 													"height": 13
 												},
 												{
@@ -22520,8 +23896,13 @@
 													},
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;1",
+<<<<<<< Updated upstream
 													"left": 597,
 													"top": 631,
+=======
+													"left": 593,
+													"top": 471,
+>>>>>>> Stashed changes
 													"width": 63.2353515625,
 													"height": 13,
 													"text": "Position"
@@ -22536,7 +23917,11 @@
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;0",
 													"left": 8,
+<<<<<<< Updated upstream
 													"top": 112,
+=======
+													"top": -208,
+>>>>>>> Stashed changes
 													"width": 89.578125,
 													"height": 13,
 													"text": "(from business)"
@@ -22551,15 +23936,24 @@
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;0",
 													"left": 8,
+<<<<<<< Updated upstream
 													"top": 112,
+=======
+													"top": -208,
+>>>>>>> Stashed changes
 													"height": 13,
 													"horizontalAlignment": 1
 												}
 											],
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": 592,
 											"top": 624,
+=======
+											"left": 588,
+											"top": 464,
+>>>>>>> Stashed changes
 											"width": 73.2353515625,
 											"height": 25,
 											"stereotypeLabel": {
@@ -22596,8 +23990,13 @@
 													},
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;0",
+<<<<<<< Updated upstream
 													"left": 597,
 													"top": 654,
+=======
+													"left": 593,
+													"top": 494,
+>>>>>>> Stashed changes
 													"width": 63.2353515625,
 													"height": 13,
 													"text": "-y: int",
@@ -22614,8 +24013,13 @@
 													},
 													"fillColor": "#ffa3ff",
 													"font": "Arial;13;0",
+<<<<<<< Updated upstream
 													"left": 597,
 													"top": 669,
+=======
+													"left": 593,
+													"top": 509,
+>>>>>>> Stashed changes
 													"width": 63.2353515625,
 													"height": 13,
 													"text": "-x: int",
@@ -22624,8 +24028,13 @@
 											],
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
+<<<<<<< Updated upstream
 											"left": 592,
 											"top": 649,
+=======
+											"left": 588,
+											"top": 489,
+>>>>>>> Stashed changes
 											"width": 73.2353515625,
 											"height": 38
 										},
@@ -22642,7 +24051,11 @@
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
 											"left": 492,
+<<<<<<< Updated upstream
 											"top": 575,
+=======
+											"top": 415,
+>>>>>>> Stashed changes
 											"width": 73.2353515625,
 											"height": 10
 										},
@@ -22659,7 +24072,11 @@
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
 											"left": -4,
+<<<<<<< Updated upstream
 											"top": -56,
+=======
+											"top": -216,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										},
@@ -22676,7 +24093,11 @@
 											"fillColor": "#ffa3ff",
 											"font": "Arial;13;0",
 											"left": -4,
+<<<<<<< Updated upstream
 											"top": -56,
+=======
+											"top": -216,
+>>>>>>> Stashed changes
 											"width": 10,
 											"height": 10
 										}
@@ -22684,8 +24105,13 @@
 									"fillColor": "#ffa3ff",
 									"font": "Arial;13;0",
 									"containerChangeable": true,
+<<<<<<< Updated upstream
 									"left": 592,
 									"top": 624,
+=======
+									"left": 588,
+									"top": 464,
+>>>>>>> Stashed changes
 									"width": 73.2353515625,
 									"height": 73,
 									"nameCompartment": {
@@ -22707,16 +24133,25 @@
 								},
 								{
 									"_type": "UMLAssociationView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuGhLTAPWCHLM=",
+=======
+									"_id": "AAAAAAFuPfuEPgJur5M=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGhLTAPV+0AE="
+=======
+										"$ref": "AAAAAAFuPfuEPQJquvA="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAPWDp70=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22728,16 +24163,34 @@
 											"font": "Arial;13;0",
 											"left": 638,
 											"top": 565,
+=======
+											"_id": "AAAAAAFuPfuEPwJvUDw=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJquvA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 838,
+											"top": 415,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWEFbI=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22749,16 +24202,34 @@
 											"font": "Arial;13;0",
 											"left": 653,
 											"top": 565,
+=======
+											"_id": "AAAAAAFuPfuEPwJw+Wg=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJquvA="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 853,
+											"top": 415,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWFugA=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22770,16 +24241,34 @@
 											"font": "Arial;13;0",
 											"left": 609,
 											"top": 566,
+=======
+											"_id": "AAAAAAFuPfuEPwJxgWI=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJquvA="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 809,
+											"top": 416,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWG7PI=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22791,16 +24280,34 @@
 											"font": "Arial;13;0",
 											"left": 639,
 											"top": 539,
+=======
+											"_id": "AAAAAAFuPfuEPwJyUC0=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJrVXU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 731,
+											"top": 323,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.5235987755982988,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWHNIc=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22812,16 +24319,34 @@
 											"font": "Arial;13;0",
 											"left": 652,
 											"top": 542,
+=======
+											"_id": "AAAAAAFuPfuEPwJzZJY=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJrVXU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 734,
+											"top": 309,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWIqWo=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22833,16 +24358,34 @@
 											"font": "Arial;13;0",
 											"left": 611,
 											"top": 535,
+=======
+											"_id": "AAAAAAFuPfuEPwJ0pmo=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJrVXU="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 727,
+											"top": 350,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.5235987755982988,
 											"distance": 25,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWJONU=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22875,15 +24418,54 @@
 											"font": "Arial;13;0",
 											"left": 652,
 											"top": 589,
+=======
+											"_id": "AAAAAAFuPfuEPwJ1mXU=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJsxys="
+											},
+											"font": "Arial;13;0",
+											"left": 675,
+											"top": 507,
+											"width": 100.80712890625,
+											"height": 13,
+											"alpha": -0.2121437213374366,
+											"distance": 66.49060083951716,
+											"hostEdge": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"text": "-explorerPosition"
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuPfuEPwJ2e5U=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJsxys="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 688,
+											"top": 522,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWLixU=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
@@ -22894,23 +24476,48 @@
 											"font": "Arial;13;0",
 											"left": 608,
 											"top": 596,
+=======
+											"_id": "AAAAAAFuPfuEPwJ3knI=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJsxys="
+											},
+											"font": "Arial;13;0",
+											"left": 678,
+											"top": 481,
+>>>>>>> Stashed changes
 											"width": 7.22998046875,
 											"height": 13,
 											"alpha": 0.5235987755982988,
 											"distance": 25,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
+=======
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+>>>>>>> Stashed changes
 											},
 											"text": "1"
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWMgwM=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGhLTAPV/VVM="
+=======
+											"_id": "AAAAAAFuPfuEPwJ4AOM=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJrVXU="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -22919,12 +24526,21 @@
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuGhLTAfWN8EA=",
 											"_parent": {
 												"$ref": "AAAAAAFuGhLTAPWCHLM="
 											},
 											"model": {
 												"$ref": "AAAAAAFuGhLTAPWANHY="
+=======
+											"_id": "AAAAAAFuPfuEPwJ5nQs=",
+											"_parent": {
+												"$ref": "AAAAAAFuPfuEPgJur5M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPfuEPQJsxys="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -22937,6 +24553,7 @@
 										"$ref": "AAAAAAFuGhJi/fQnAAQ="
 									},
 									"tail": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuGeWv7QRrJv0="
 									},
 									"points": "624:520;624:624",
@@ -22973,20 +24590,67 @@
 									},
 									"headQualifiersCompartment": {
 										"$ref": "AAAAAAFuGhLTAfWN8EA="
+=======
+										"$ref": "AAAAAAFuDsr7kNlPIZM="
+									},
+									"points": "706:344;824:344;824:500;660:500",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuPfuEPwJvUDw="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuPfuEPwJw+Wg="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuPfuEPwJxgWI="
+									},
+									"tailRoleNameLabel": {
+										"$ref": "AAAAAAFuPfuEPwJyUC0="
+									},
+									"tailPropertyLabel": {
+										"$ref": "AAAAAAFuPfuEPwJzZJY="
+									},
+									"tailMultiplicityLabel": {
+										"$ref": "AAAAAAFuPfuEPwJ0pmo="
+									},
+									"headRoleNameLabel": {
+										"$ref": "AAAAAAFuPfuEPwJ1mXU="
+									},
+									"headPropertyLabel": {
+										"$ref": "AAAAAAFuPfuEPwJ2e5U="
+									},
+									"headMultiplicityLabel": {
+										"$ref": "AAAAAAFuPfuEPwJ3knI="
+									},
+									"tailQualifiersCompartment": {
+										"$ref": "AAAAAAFuPfuEPwJ4AOM="
+									},
+									"headQualifiersCompartment": {
+										"$ref": "AAAAAAFuPfuEPwJ5nQs="
+>>>>>>> Stashed changes
 									}
 								},
 								{
 									"_type": "UMLAssociationView",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuPfuEPgJur5M=",
+=======
+									"_id": "AAAAAAFuPkk7OcyeS6M=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFtf1SrJ1Nr9W4="
 									},
 									"model": {
+<<<<<<< Updated upstream
 										"$ref": "AAAAAAFuPfuEPQJquvA="
+=======
+										"$ref": "AAAAAAFuPkk7OMyalv4="
+>>>>>>> Stashed changes
 									},
 									"subViews": [
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJvUDw=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -22998,10 +24662,25 @@
 											"font": "Arial;13;0",
 											"left": 839,
 											"top": 497,
+=======
+											"_id": "AAAAAAFuPkk7Ocyfszc=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyalv4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 601,
+											"top": 416,
+											"width": 74.07080078125,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
 											},
 											"edgePosition": 1
@@ -23019,16 +24698,41 @@
 											"font": "Arial;13;0",
 											"left": 854,
 											"top": 497,
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"edgePosition": 1,
+											"text": "+exitPosition"
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuPkk7Ocygq8w=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyalv4="
+											},
+											"visible": null,
+											"font": "Arial;13;0",
+											"left": 653,
+											"top": 416,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJxgWI=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23040,16 +24744,34 @@
 											"font": "Arial;13;0",
 											"left": 809,
 											"top": 498,
+=======
+											"_id": "AAAAAAFuPkk7OsyhlYk=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyalv4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 609,
+											"top": 417,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -1.5707963267948966,
 											"distance": 15,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 1
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJyUC0=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23061,16 +24783,34 @@
 											"font": "Arial;13;0",
 											"left": 731,
 											"top": 323,
+=======
+											"_id": "AAAAAAFuPkk7OsyigoU=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMybIF8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 639,
+											"top": 402,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.5235987755982988,
 											"distance": 30,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJzZJY=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23082,16 +24822,34 @@
 											"font": "Arial;13;0",
 											"left": 734,
 											"top": 309,
+=======
+											"_id": "AAAAAAFuPkk7OsyjXh4=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMybIF8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 652,
+											"top": 405,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": 0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJ0pmo=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23103,16 +24861,34 @@
 											"font": "Arial;13;0",
 											"left": 727,
 											"top": 350,
+=======
+											"_id": "AAAAAAFuPkk7Osyk88I=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMybIF8="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 611,
+											"top": 398,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.5235987755982988,
 											"distance": 25,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"edgePosition": 2
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJ1mXU=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23145,15 +24921,54 @@
 											"font": "Arial;13;0",
 											"left": 692,
 											"top": 686,
+=======
+											"_id": "AAAAAAFuPkk7Osylgrs=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyccnY="
+											},
+											"font": "Arial;13;0",
+											"left": 643,
+											"top": 440,
+											"width": 70.80810546875,
+											"height": 13,
+											"alpha": 5.000716192098137,
+											"distance": 56.61271941887264,
+											"hostEdge": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"text": "-exitPosition"
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "AAAAAAFuPkk7OsymUtk=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyccnY="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"left": 652,
+											"top": 428,
+>>>>>>> Stashed changes
 											"height": 13,
 											"alpha": -0.7853981633974483,
 											"distance": 40,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											}
 										},
 										{
 											"_type": "EdgeLabelView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJ3knI=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
@@ -23164,23 +24979,48 @@
 											"font": "Arial;13;0",
 											"left": 682,
 											"top": 645,
+=======
+											"_id": "AAAAAAFuPkk7OsynKRM=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyccnY="
+											},
+											"font": "Arial;13;0",
+											"left": 608,
+											"top": 435,
+>>>>>>> Stashed changes
 											"width": 7.22998046875,
 											"height": 13,
 											"alpha": 0.5235987755982988,
 											"distance": 25,
 											"hostEdge": {
+<<<<<<< Updated upstream
 												"$ref": "AAAAAAFuPfuEPgJur5M="
+=======
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+>>>>>>> Stashed changes
 											},
 											"text": "1"
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJ4AOM=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
 											},
 											"model": {
 												"$ref": "AAAAAAFuPfuEPQJrVXU="
+=======
+											"_id": "AAAAAAFuPkk7OsyojpU=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMybIF8="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -23189,12 +25029,21 @@
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
+<<<<<<< Updated upstream
 											"_id": "AAAAAAFuPfuEPwJ5nQs=",
 											"_parent": {
 												"$ref": "AAAAAAFuPfuEPgJur5M="
 											},
 											"model": {
 												"$ref": "AAAAAAFuPfuEPQJsxys="
+=======
+											"_id": "AAAAAAFuPkk7OsypNH0=",
+											"_parent": {
+												"$ref": "AAAAAAFuPkk7OcyeS6M="
+											},
+											"model": {
+												"$ref": "AAAAAAFuPkk7OMyccnY="
+>>>>>>> Stashed changes
 											},
 											"visible": false,
 											"font": "Arial;13;0",
@@ -23209,6 +25058,7 @@
 									"tail": {
 										"$ref": "AAAAAAFuDsr7kNlPIZM="
 									},
+<<<<<<< Updated upstream
 									"points": "706:344;824:344;824:664;664:664",
 									"showVisibility": true,
 									"nameLabel": {
@@ -23243,6 +25093,43 @@
 									},
 									"headQualifiersCompartment": {
 										"$ref": "AAAAAAFuPfuEPwJ5nQs="
+=======
+									"lineStyle": 1,
+									"points": "624:383;624:463",
+									"showVisibility": true,
+									"nameLabel": {
+										"$ref": "AAAAAAFuPkk7Ocyfszc="
+									},
+									"stereotypeLabel": {
+										"$ref": "AAAAAAFuPkk7Ocygq8w="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAFuPkk7OsyhlYk="
+									},
+									"tailRoleNameLabel": {
+										"$ref": "AAAAAAFuPkk7OsyigoU="
+									},
+									"tailPropertyLabel": {
+										"$ref": "AAAAAAFuPkk7OsyjXh4="
+									},
+									"tailMultiplicityLabel": {
+										"$ref": "AAAAAAFuPkk7Osyk88I="
+									},
+									"headRoleNameLabel": {
+										"$ref": "AAAAAAFuPkk7Osylgrs="
+									},
+									"headPropertyLabel": {
+										"$ref": "AAAAAAFuPkk7OsymUtk="
+									},
+									"headMultiplicityLabel": {
+										"$ref": "AAAAAAFuPkk7OsynKRM="
+									},
+									"tailQualifiersCompartment": {
+										"$ref": "AAAAAAFuPkk7OsyojpU="
+									},
+									"headQualifiersCompartment": {
+										"$ref": "AAAAAAFuPkk7OsypNH0="
+>>>>>>> Stashed changes
 									}
 								}
 							]
@@ -23270,15 +25157,25 @@
 								},
 								{
 									"_type": "UMLAssociation",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuGeaa7wVHWz4=",
+=======
+									"_id": "AAAAAAFuPfuEPQJquvA=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFuDsr7kNlNcHw="
 									},
 									"end1": {
 										"_type": "UMLAssociationEnd",
+<<<<<<< Updated upstream
 										"_id": "AAAAAAFuGeaa7wVICvs=",
 										"_parent": {
 											"$ref": "AAAAAAFuGeaa7wVHWz4="
+=======
+										"_id": "AAAAAAFuPfuEPQJrVXU=",
+										"_parent": {
+											"$ref": "AAAAAAFuPfuEPQJquvA="
+>>>>>>> Stashed changes
 										},
 										"reference": {
 											"$ref": "AAAAAAFuDsr7kNlNcHw="
@@ -23287,6 +25184,7 @@
 									},
 									"end2": {
 										"_type": "UMLAssociationEnd",
+<<<<<<< Updated upstream
 										"_id": "AAAAAAFuGeaa7wVJoQI=",
 										"_parent": {
 											"$ref": "AAAAAAFuGeaa7wVHWz4="
@@ -23297,19 +25195,41 @@
 										},
 										"visibility": "private",
 										"multiplicity": "*"
+=======
+										"_id": "AAAAAAFuPfuEPQJsxys=",
+										"_parent": {
+											"$ref": "AAAAAAFuPfuEPQJquvA="
+										},
+										"name": "explorerPosition",
+										"reference": {
+											"$ref": "AAAAAAFuGhJi/fQlU0M="
+										},
+										"visibility": "private",
+										"multiplicity": "1"
+>>>>>>> Stashed changes
 									}
 								},
 								{
 									"_type": "UMLAssociation",
+<<<<<<< Updated upstream
 									"_id": "AAAAAAFuPfuEPQJquvA=",
+=======
+									"_id": "AAAAAAFuPkk7OMyalv4=",
+>>>>>>> Stashed changes
 									"_parent": {
 										"$ref": "AAAAAAFuDsr7kNlNcHw="
 									},
 									"end1": {
 										"_type": "UMLAssociationEnd",
+<<<<<<< Updated upstream
 										"_id": "AAAAAAFuPfuEPQJrVXU=",
 										"_parent": {
 											"$ref": "AAAAAAFuPfuEPQJquvA="
+=======
+										"_id": "AAAAAAFuPkk7OMybIF8=",
+										"_parent": {
+											"$ref": "AAAAAAFuPkk7OMyalv4="
+>>>>>>> Stashed changes
 										},
 										"reference": {
 											"$ref": "AAAAAAFuDsr7kNlNcHw="
@@ -23318,11 +25238,19 @@
 									},
 									"end2": {
 										"_type": "UMLAssociationEnd",
+<<<<<<< Updated upstream
 										"_id": "AAAAAAFuPfuEPQJsxys=",
 										"_parent": {
 											"$ref": "AAAAAAFuPfuEPQJquvA="
 										},
 										"name": "explorerPosition",
+=======
+										"_id": "AAAAAAFuPkk7OMyccnY=",
+										"_parent": {
+											"$ref": "AAAAAAFuPkk7OMyalv4="
+										},
+										"name": "exitPosition",
+>>>>>>> Stashed changes
 										"reference": {
 											"$ref": "AAAAAAFuGhJi/fQlU0M="
 										},
@@ -23379,6 +25307,7 @@
 						},
 						{
 							"_type": "UMLClass",
+<<<<<<< Updated upstream
 							"_id": "AAAAAAFuGeWv7QRp/G0=",
 							"_parent": {
 								"$ref": "AAAAAAFtf06LglCpxOk="
@@ -23442,6 +25371,8 @@
 						},
 						{
 							"_type": "UMLClass",
+=======
+>>>>>>> Stashed changes
 							"_id": "AAAAAAFuGhJi/fQlU0M=",
 							"_parent": {
 								"$ref": "AAAAAAFtf06LglCpxOk="

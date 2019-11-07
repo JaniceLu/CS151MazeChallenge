@@ -6,6 +6,10 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class AppFrame extends JFrame implements ActionListener {
 	private Model model;
 	private AppPanel panel;

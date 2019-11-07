@@ -12,6 +12,10 @@ import javax.swing.JTextField;
 import business.Maze;
 import framework.AppPanel;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class ControlPanel extends AppPanel {
 	private MazeController controller;
 	private JTextField exitDistanceField, movesLeftField;

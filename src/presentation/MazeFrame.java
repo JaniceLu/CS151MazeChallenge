@@ -5,6 +5,10 @@ import javax.swing.JFrame;
 
 import business.Maze;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class MazeFrame extends JFrame {
 	private Maze maze;
 	private MazePanel mazePanel;

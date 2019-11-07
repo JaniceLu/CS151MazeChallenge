@@ -6,6 +6,10 @@ import java.util.Observer;
 import java.util.Set;
 import javax.swing.JPanel;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class AppPanel extends JPanel implements Observer {
 	protected Model model;
 	protected Set<View> views;

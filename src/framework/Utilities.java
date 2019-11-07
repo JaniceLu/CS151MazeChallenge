@@ -4,6 +4,10 @@ import java.awt.event.*;
 import java.io.*;
 import javax.swing.*;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class Utilities {
 
 	// enables stack traces and diagnostics

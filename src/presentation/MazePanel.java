@@ -6,6 +6,10 @@ import javax.swing.JPanel;
 
 import business.Maze;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class MazePanel extends JPanel {
 	private Maze maze;
 	private MazeView mazeView;

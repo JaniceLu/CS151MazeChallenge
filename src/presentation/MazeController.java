@@ -10,6 +10,10 @@ import business.Maze;
 import framework.Command;
 import framework.CommandProcessor;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class MazeController implements ActionListener {
 	private Maze maze;
 

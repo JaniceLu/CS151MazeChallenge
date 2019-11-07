@@ -8,6 +8,10 @@ import framework.Model;
 import framework.Utilities;
 import presentation.Heading;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class Maze extends Model {
 	private Position exitRoom, player;
 	private int movesLeft, size;

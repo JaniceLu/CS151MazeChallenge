@@ -3,6 +3,10 @@ package presentation;
 import business.Maze;
 import framework.Command;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public abstract class Move extends Command {
 	protected Heading heading;
 	protected Maze maze;

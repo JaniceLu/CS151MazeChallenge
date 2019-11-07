@@ -1,5 +1,9 @@
 package business;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ */
 public class Position {
 	private int x, y;
 	

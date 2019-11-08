@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MazeChallenge",
+            "request": "launch",
+            "mainClass": "mazeChallenge/presentation.MazeChallenge",
+            "projectName": "mazeChallenge"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MazeFrame",
             "request": "launch",
             "mainClass": "mazeChallenge/presentation.MazeFrame",

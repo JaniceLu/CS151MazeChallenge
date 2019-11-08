@@ -11,6 +11,8 @@ import business.Maze;
  * 10/31/2019: NP - Created
  */
 public class MazePanel extends JPanel {
+	private static final long serialVersionUID = 1L;
+	
 	private Maze maze;
 	private MazeView mazeView;
 	private ControlPanel controlPanel;

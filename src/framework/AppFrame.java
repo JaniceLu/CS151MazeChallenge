@@ -5,10 +5,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/7/2019: JL - Modified createMenuBar() to display all options
  */
 public class AppFrame extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
@@ -22,7 +24,6 @@ public class AppFrame extends JFrame implements ActionListener {
 		model = factory.makeModel();
 		panel = factory.makePanel(model, this);
 		this.getContentPane().add(panel);
-		this.setJMenuBar(createMenuBar());
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle(factory.getTitle());
 		this.setSize(500, 500);
@@ -34,14 +35,29 @@ public class AppFrame extends JFrame implements ActionListener {
 	
 	protected JMenuBar createMenuBar() {
 		JMenuBar bar = new JMenuBar();
+		JMenuItem menuItem;
 		// add file, edit, and help menus
-		JMenu fileMenu = new JMenu();
-		JMenu helpMenu = new JMenu();
-		JMenu editMenu = new JMenu();
-		Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		JMenu fileMenu = new JMenu("File");
+		JMenu editMenu = Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		JMenu helpMenu = new JMenu("Help");
 		bar.add(fileMenu);
-		bar.add(helpMenu);
+		menuItem = new JMenuItem("New");
+		fileMenu.add(menuItem);
+		menuItem = new JMenuItem("Save");
+		fileMenu.add(menuItem);
+		menuItem = new JMenuItem("SaveAs");
+		fileMenu.add(menuItem);
+		menuItem = new JMenuItem("Open");
+		fileMenu.add(menuItem);
+		menuItem = new JMenuItem("Quit");
+		fileMenu.add(menuItem);
 		bar.add(editMenu);
+		bar.add(helpMenu);
+		menuItem = new JMenuItem("About");
+		helpMenu.add(menuItem);
+		menuItem = new JMenuItem("Contents");
+		helpMenu.add(menuItem);
+		
 		
 		return bar;
 	}

@@ -2,81 +2,19 @@ package framework;
 
 import java.awt.event.*;
 import java.io.*;
+import java.util.Random;
+
 import javax.swing.*;
 
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/7/2019: JL - Added random number generator based on system time
  */
 public class Utilities {
 
 	// enables stack traces and diagnostics
 	public static Boolean DEBUG = true;
-
-	// asks user a yes/no question
-	public static boolean confirm(String query) {
-		int result = JOptionPane.showConfirmDialog(null,
-				query, "choose one", JOptionPane.YES_NO_OPTION);
-		return result == 1;
-	}
-
-	// asks user for info
-	public static String ask(String query) {
-		return JOptionPane.showInputDialog(null, query);
-	}
-
-	// tells user some info
-	public static void inform(String info) {
-		JOptionPane.showMessageDialog(null,info);
-	}
-
-	// tells user lots of info
-	public static void inform(String[] items) {
-		String infoString = "";
-		for(int i = 0; i < items.length; i++) {
-			infoString = infoString + "\n" + items[i];
-		}
-		inform(infoString);
-	}
-
-	// tells user about an error
-	public static void error(String gripe) {
-		JOptionPane.showMessageDialog(null,
-				gripe,
-				"OOPS!",
-				JOptionPane.ERROR_MESSAGE);
-	}
-
-	// tells user about an exception
-	public static void error(Exception gripe) {
-		if (DEBUG) gripe.printStackTrace();
-		JOptionPane.showMessageDialog(null,
-				gripe.getMessage(),
-				"OOPS!",
-				JOptionPane.ERROR_MESSAGE);
-	}
-
-	// asks user save changes?
-	public static void saveChanges(Model model) {
-		if (model.hasUnsavedChanges() &&
-		      Utilities.confirm("current model has unsaved changes, continue?"))
-			Utilities.save(model, false);
-	}
-
-	// asks user for a file name
-	public static String getFileName(String fName) {
-		JFileChooser chooser = new JFileChooser();
-		String result = null;
-		if (fName != null) {
-		   // open chooser in directory of fName
-           chooser.setCurrentDirectory(new File(fName));
-		}
-		int returnVal = chooser.showOpenDialog(null);
-		if(returnVal == JFileChooser.APPROVE_OPTION) {
-			result= chooser.getSelectedFile().getPath();
-		}
-		return result;
-	}
 
 	// save model
 	public static void save(Model model, Boolean saveAs) {
@@ -113,6 +51,49 @@ public class Utilities {
 		return newModel;
 	}
 
+	// tells user about an error
+	public static void error(String gripe) {
+		JOptionPane.showMessageDialog(null,
+				gripe,
+				"OOPS!",
+				JOptionPane.ERROR_MESSAGE);
+	}
+
+	// tells user about an exception
+	public static void error(Exception gripe) {
+		if (DEBUG) gripe.printStackTrace();
+		JOptionPane.showMessageDialog(null,
+				gripe.getMessage(),
+				"OOPS!",
+				JOptionPane.ERROR_MESSAGE);
+	}
+
+	// tells user some info
+	public static void inform(String info) {
+		JOptionPane.showMessageDialog(null,info);
+	}
+
+	// tells user lots of info
+	public static void inform(String[] items) {
+		String infoString = "";
+		for(int i = 0; i < items.length; i++) {
+			infoString = infoString + "\n" + items[i];
+		}
+		inform(infoString);
+	}
+
+	// asks user for info
+	public static String ask(String query) {
+		return JOptionPane.showInputDialog(null, query);
+	}
+
+	// asks user a yes/no question
+	public static boolean confirm(String query) {
+		int result = JOptionPane.showConfirmDialog(null,
+				query, "choose one", JOptionPane.YES_NO_OPTION);
+		return result == 1;
+	}
+
 	// a simple menu maker
 	public static JMenu makeMenu(String name, String[] items, ActionListener handler) {
 		JMenu result = new JMenu(name);
@@ -124,5 +105,31 @@ public class Utilities {
 		return result;
 	}
 
-	// etc.
+	// a simple number generator
+	public static int numberGenerator(int bound) {
+		Random seed = new Random(System.currentTimeMillis());
+		return seed.nextInt(bound);
+	}
+
+	// asks user save changes?
+	public static void saveChanges(Model model) {
+		if (model.hasUnsavedChanges() &&
+		      Utilities.confirm("current model has unsaved changes, continue?"))
+			Utilities.save(model, false);
+	}
+
+	// asks user for a file name
+	public static String getFileName(String fName) {
+		JFileChooser chooser = new JFileChooser();
+		String result = null;
+		if (fName != null) {
+		   // open chooser in directory of fName
+           chooser.setCurrentDirectory(new File(fName));
+		}
+		int returnVal = chooser.showOpenDialog(null);
+		if(returnVal == JFileChooser.APPROVE_OPTION) {
+			result= chooser.getSelectedFile().getPath();
+		}
+		return result;
+	}
 }

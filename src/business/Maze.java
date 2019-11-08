@@ -1,9 +1,5 @@
 package business;
 
-import java.util.Random;
-
-import framework.Command;
-import framework.CommandProcessor;
 import framework.Model;
 import framework.Utilities;
 import presentation.Heading;
@@ -11,22 +7,24 @@ import presentation.Heading;
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/7/2019: JL - changed player and exit position generation by using Utilities
  */
 public class Maze extends Model {
+	private static final long serialVersionUID = 1L;
+	
 	private Position exitRoom, player;
 	private int movesLeft, size;
 	
 	public Maze() {
 		movesLeft = 20;
 		size = 20;
-		Random gen = new Random(System.currentTimeMillis());
 		
 		int exitX, exitY, playerX, playerY;
 		do {
-			exitX = gen.nextInt(size);
-			exitY = gen.nextInt(size);
-			playerX = gen.nextInt(size);
-			playerY = gen.nextInt(size);
+			exitX = Utilities.numberGenerator(size);
+			exitY = Utilities.numberGenerator(size);
+			playerX = Utilities.numberGenerator(size);
+			playerY = Utilities.numberGenerator(size);
 		} while(exitX == playerX && exitY == playerY);
 		
 		exitRoom = new Position(exitX, exitY);
@@ -42,7 +40,7 @@ public class Maze extends Model {
 		
 		movesLeft -= 1;
 		changed();
-//		if(movesLeft == 0) Utilities.error("No moves left");
+		if(movesLeft == 0) Utilities.error("No moves left");
 	}
 	public int calculateExitDistance() {
 		if(exitRoom == null || player == null) return -1;

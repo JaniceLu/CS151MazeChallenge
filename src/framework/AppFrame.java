@@ -11,6 +11,8 @@ import javax.swing.JMenuBar;
  * 10/31/2019: NP - Created
  */
 public class AppFrame extends JFrame implements ActionListener {
+	private static final long serialVersionUID = 1L;
+	
 	private Model model;
 	private AppPanel panel;
 	private AppFactory factory;

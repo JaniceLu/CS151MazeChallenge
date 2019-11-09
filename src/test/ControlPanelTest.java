@@ -1,7 +1,6 @@
 package test;
 
 import presentation.ControlPanel;
-import presentation.EditMenuBar;
 
 import java.awt.Container;
 import javax.swing.JFrame;
@@ -20,7 +19,6 @@ public class ControlPanelTest{
         ControlPanel controlPanel = new ControlPanel(maze);
         JFrame controlPanelFrame = new JFrame();
         controlPanelFrame.getContentPane().add(controlPanel);
-        controlPanelFrame.setJMenuBar(new EditMenuBar());
         controlPanelFrame.setSize(400,800);
         controlPanelFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         controlPanelFrame.setVisible(true);

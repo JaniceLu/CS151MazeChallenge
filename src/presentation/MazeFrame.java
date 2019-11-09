@@ -19,13 +19,7 @@ public class MazeFrame extends AppFrame {
 	
 	public MazeFrame(MazeFactory factory) {
 		super(factory);
-		factory.makeEditCommand(maze, "North");
-		factory.makeEditCommand(maze, "East");
-		factory.makeEditCommand(maze, "West");
-		factory.makeEditCommand(maze, "South");
-		factory.makeEditCommand(maze, "Reset");
-		
-		maze = new Maze();
+		this.setJMenuBar(createMenuBar());
 		mazePanel = new MazePanel(maze);
 		Container cp = getContentPane();
 		cp.add(mazePanel);
@@ -34,7 +28,7 @@ public class MazeFrame extends AppFrame {
 		this.setSize(800, 800);
 		this.pack();
 	}
-	
+
 	public static void main(String[] args) {
 		MazeFactory factory = new MazeFactory();
 		MazeFrame mazeFrame = new MazeFrame(factory);

@@ -11,8 +11,7 @@ import framework.Command;
 import framework.Model;
 
 /**
- * Change History: 11/7/2019: JL - created with dummy functions, needs to be
- * implemented properly later
+ * Change History: 11/7/2019: JL - created
  */
 public class MazeFactory implements AppFactory {
     public Model makeModel() {
@@ -24,8 +23,8 @@ public class MazeFactory implements AppFactory {
     }
 
     public Command makeEditCommand(Model model, String type) {
-        if (model instanceof Model) {
-            if (type == "North")
+        if (model instanceof Maze) {
+            if (type == "North") 
                 return new MoveNorth((Maze) model);
             else if (type == "East")
                 return new MoveEast((Maze) model);
@@ -57,8 +56,9 @@ public class MazeFactory implements AppFactory {
 
     @Override
     public AppPanel makePanel(Model model, ActionListener listener) {
-        AppPanel panel = new AppPanel();
+        AppPanel panel = null;
+        if(model instanceof Maze) panel = new MazePanel((Maze) model);
+        else panel = new AppPanel();
         return panel;
     }
-
 }

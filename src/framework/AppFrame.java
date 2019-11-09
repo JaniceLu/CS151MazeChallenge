@@ -11,6 +11,7 @@ import javax.swing.JMenuItem;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/7/2019: JL - Modified createMenuBar() to display all options
+ *
  */
 public class AppFrame extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
@@ -23,6 +24,7 @@ public class AppFrame extends JFrame implements ActionListener {
 		this.factory = factory;
 		model = factory.makeModel();
 		panel = factory.makePanel(model, this);
+		this.setJMenuBar(createMenuBar());
 		this.getContentPane().add(panel);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle(factory.getTitle());

@@ -14,7 +14,7 @@ import framework.CommandProcessor;
 /**
  * Change History:
  * 10/31/2019: NP - Created
- * 11/10/2019: NP - Extended to handle EditMenuBar move commands
+ * 11/10/2019: NP - Extended to handle move commands
  *
  */
 public class MazeController implements ActionListener {

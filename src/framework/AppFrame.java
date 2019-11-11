@@ -19,8 +19,8 @@ import presentation.MazePanel;
  *
  */
 public class AppFrame extends JFrame implements ActionListener {
-	private Model model;
-	private AppPanel panel;
+	protected Model model;
+	protected AppPanel panel;
 	private AppFactory factory;
 	
 	public AppFrame(AppFactory factory) {
@@ -80,16 +80,6 @@ public class AppFrame extends JFrame implements ActionListener {
 		} else {
 			Command c = factory.makeEditCommand(model, command);
 			CommandProcessor.commandProcessor.execute(c);
-			
-			Maze maze = (Maze)model;
-			MazePanel mazePanel = (MazePanel)panel;
-			ControlPanel controlPanel = mazePanel.getControlPanel();
-			
-			JTextField exitDistanceField = controlPanel.getExitDistanceField();
-			JTextField movesLeftField = controlPanel.getMovesLeftField();
-
-			exitDistanceField.setText(""+maze.calculateExitDistance());
-			movesLeftField.setText(""+maze.getMovesLeft());
 		}
 	}
 

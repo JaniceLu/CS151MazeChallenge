@@ -1,28 +1,29 @@
 package presentation;
 
 import java.awt.Container;
-import javax.swing.JFrame;
+import java.awt.event.ActionEvent;
+
+import javax.swing.JTextField;
 
 import business.Maze;
+import framework.AppFrame;
 
-public class MazeFrame extends JFrame {
-	private Maze maze;
-	private MazePanel mazePanel;
-	
-	public MazeFrame() {
-		maze = new Maze();
-		mazePanel = new MazePanel(maze);
-		Container cp = getContentPane();
-		cp.add(mazePanel);
-		
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setTitle("Maze Challenge");
-		this.setSize(800, 800);
-		this.pack();
+public class MazeFrame extends AppFrame {	
+	public MazeFrame(MazeFactory factory) {
+		super(factory);
 	}
 	
-	public static void main(String[] args) {
-		MazeFrame mazeFrame = new MazeFrame();
-		mazeFrame.setVisible(true);
+	public void actionPerformed(ActionEvent ae) {
+		super.actionPerformed(ae);
+		Maze maze = (Maze) model;
+		MazePanel mazePanel = (MazePanel) panel;
+		
+		ControlPanel controlPanel = mazePanel.getControlPanel();
+		
+		JTextField exitDistanceField = controlPanel.getExitDistanceField();
+		JTextField movesLeftField = controlPanel.getMovesLeftField();
+
+		exitDistanceField.setText(""+maze.calculateExitDistance());
+		movesLeftField.setText(""+maze.getMovesLeft());
 	}
 }

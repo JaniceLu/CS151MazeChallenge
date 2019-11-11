@@ -8,6 +8,12 @@ import framework.AppPanel;
 import framework.Command;
 import framework.Model;
 
+/**
+ * 
+ * Change History
+ * 11/10/2019: NP - Created
+ *
+ */
 public class MazeFactory implements AppFactory {
 
 	public Model makeModel() {

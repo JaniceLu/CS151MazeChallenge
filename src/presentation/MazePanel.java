@@ -7,6 +7,13 @@ import javax.swing.JPanel;
 import business.Maze;
 import framework.AppPanel;
 
+/**
+ * 
+ * Change History:
+ * 10/31/2019: NP - Created
+ * 11/10/2019: NP - Updated to extend AppPanel
+ *
+ */
 public class MazePanel extends AppPanel {
 	private Maze maze;
 	private MazeView mazeView;

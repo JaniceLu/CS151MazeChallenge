@@ -7,6 +7,13 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+/**
+ * 
+ * Change History:
+ * 10/31/2019: NP - Created
+ * 11/10/2019: NP - Implemented actionPerformed
+ *
+ */
 public class AppFrame extends JFrame implements ActionListener {
 	private Model model;
 	private AppPanel panel;

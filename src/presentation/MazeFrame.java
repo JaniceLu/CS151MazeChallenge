@@ -12,6 +12,7 @@ import framework.AppFrame;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Added comsetic menu bar to frame
+ * 11/10/2019: NP - Updated MazeFrame to use AppFactory constructor
  *
  */
 public class MazeFrame extends JFrame {

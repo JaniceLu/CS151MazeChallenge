@@ -11,7 +11,8 @@ import framework.Model;
 /**
  * 
  * Change History
- * 11/10/2019: NP - Created
+ * 11/07/2019: JL - Created
+ * 11/10/2019: NP - Small revisions to edit commands
  *
  */
 public class MazeFactory implements AppFactory {
@@ -21,8 +22,12 @@ public class MazeFactory implements AppFactory {
 	}
 
 	public AppPanel makePanel(Model model, ActionListener listener) {
+		AppPanel panel = null;
 		
-		return new MazePanel((Maze)model);
+		if(model instanceof Maze) panel = new MazePanel((Maze)model);
+		else panel = new AppPanel();
+		
+		return panel;
 	}
 
 	public String[] getEditCommands() {
@@ -32,11 +37,13 @@ public class MazeFactory implements AppFactory {
 	public Command makeEditCommand(Model model, String type) {
 		Command c = null;
 		
-		if(type.equals("Move North")) c = new MoveNorth((Maze)model);
-		else if(type.equals("Move East")) c = new MoveEast((Maze)model);
-		else if(type.equals("Move West")) c = new MoveWest((Maze)model);
-		else if(type.equals("Move South")) c = new MoveSouth((Maze)model);
-//		else if(type.equals("Reset")) c = new Reset((Maze)model);
+		if(model instanceof Maze) {
+			if(type.equals("Move North")) c = new MoveNorth((Maze)model);
+			else if(type.equals("Move East")) c = new MoveEast((Maze)model);
+			else if(type.equals("Move West")) c = new MoveWest((Maze)model);
+			else if(type.equals("Move South")) c = new MoveSouth((Maze)model);
+			else if(type.equals("Reset")) c = new Reset((Maze)model);
+		}
 		
 		return c;
 	}
@@ -46,7 +53,7 @@ public class MazeFactory implements AppFactory {
 	}
 
 	public String[] getHelp() {
-		return new String[] {"test 1", "test 2"};
+		return new String[] {"Located the escape room", "in the number of allotted moves"};
 	}
 
 	public String about() {

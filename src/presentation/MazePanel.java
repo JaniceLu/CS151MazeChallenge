@@ -11,7 +11,7 @@ import framework.AppPanel;
  * 
  * Change History:
  * 10/31/2019: NP - Created
- * 11/10/2019: NP - Updated to extend AppPanel
+ * 11/08/2019: JL - MazePanel now extends AppPanel(as it is supposed to)
  *
  */
 public class MazePanel extends AppPanel {

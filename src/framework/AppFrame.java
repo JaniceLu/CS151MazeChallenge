@@ -10,12 +10,10 @@ import javax.swing.JMenuBar;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Modified createMenuBar() to display all options
- * 11/10/2019: NP - Changed createMenuBar implementation 
+ * 11/10/2019: NP - Changed createMenuBar() implementation 
  *
  */
 public class AppFrame extends JFrame implements ActionListener {
-	private static final long serialVersionUID = 1L;
-	
 	private Model model;
 	private AppPanel panel;
 	private AppFactory factory;

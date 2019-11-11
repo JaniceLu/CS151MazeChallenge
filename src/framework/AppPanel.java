@@ -1,6 +1,7 @@
 package framework;
 
 import java.awt.event.ActionListener;
+import java.util.HashSet;
 import java.util.Observable;
 import java.util.Observer;
 import java.util.Set;
@@ -8,7 +9,7 @@ import javax.swing.JPanel;
 
 public class AppPanel extends JPanel implements Observer {
 	protected Model model;
-	protected Set<View> views;
+	protected Set<View> views = new HashSet<>();
 	protected ActionListener listener;
 	
 	public void update(Observable o, Object arg) {

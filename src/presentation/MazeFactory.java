@@ -31,17 +31,17 @@ public class MazeFactory implements AppFactory {
 	}
 
 	public String[] getEditCommands() {
-		return new String[] {"Move North", "Move East", "Move West", "Move South", "Reset"};
+		return new String[] {"North", "East", "West", "South", "Reset"};
 	}
 
 	public Command makeEditCommand(Model model, String type) {
 		Command c = null;
 		
 		if(model instanceof Maze) {
-			if(type.equals("Move North")) c = new MoveNorth((Maze)model);
-			else if(type.equals("Move East")) c = new MoveEast((Maze)model);
-			else if(type.equals("Move West")) c = new MoveWest((Maze)model);
-			else if(type.equals("Move South")) c = new MoveSouth((Maze)model);
+			if(type.equals("North")) c = new MoveNorth((Maze)model);
+			else if(type.equals("East")) c = new MoveEast((Maze)model);
+			else if(type.equals("West")) c = new MoveWest((Maze)model);
+			else if(type.equals("South")) c = new MoveSouth((Maze)model);
 			else if(type.equals("Reset")) c = new Reset((Maze)model);
 		}
 		

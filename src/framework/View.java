@@ -16,7 +16,6 @@ public abstract class View extends JComponent implements Observer {
 	
 	public void update(Observable o, Object arg) {
 		this.repaint();
-		
 	}
 	
 	public void setModel(Model model) {

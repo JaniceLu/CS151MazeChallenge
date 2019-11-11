@@ -28,4 +28,8 @@ public class MazePanel extends AppPanel {
 		this.add(controlPanel);
 		this.add(mazeView);
 	}
+	
+	public ControlPanel getControlPanel() {
+		return controlPanel;
+	}
 }

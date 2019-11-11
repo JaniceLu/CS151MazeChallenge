@@ -5,6 +5,11 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JTextField;
+
+import business.Maze;
+import presentation.ControlPanel;
+import presentation.MazePanel;
 
 /**
  * Change History:
@@ -38,7 +43,7 @@ public class AppFrame extends JFrame implements ActionListener {
 		
 		// add file, edit, and help menus
 		String[] fileMenuItems = new String[] {"New", "Save", "SaveAs", "Open", "Quit"};
-		String[] helpMenuItems = new String[] {"About", "Contents"};
+		String[] helpMenuItems = new String[] {"About", "Help"};
 		
 		JMenu fileMenu = Utilities.makeMenu("File", fileMenuItems, this);
 		JMenu editMenu = Utilities.makeMenu("Edit", factory.getEditCommands(), this);
@@ -60,6 +65,8 @@ public class AppFrame extends JFrame implements ActionListener {
 			Model newModel = Utilities.open(model);
 			setModel(newModel);
 		} else if(command.equals("New")) {
+			System.out.println("alpha");
+			
 			Utilities.saveChanges(model);
 			setModel(factory.makeModel());
 			model.setUnsavedChanges(false);
@@ -73,10 +80,18 @@ public class AppFrame extends JFrame implements ActionListener {
 		} else {
 			Command c = factory.makeEditCommand(model, command);
 			CommandProcessor.commandProcessor.execute(c);
+			
+			Maze maze = (Maze)model;
+			MazePanel mazePanel = (MazePanel)panel;
+			ControlPanel controlPanel = mazePanel.getControlPanel();
+			
+			JTextField exitDistanceField = controlPanel.getExitDistanceField();
+			JTextField movesLeftField = controlPanel.getMovesLeftField();
+
+			exitDistanceField.setText(""+maze.calculateExitDistance());
+			movesLeftField.setText(""+maze.getMovesLeft());
 		}
 	}
-	
-
 
 	public void setModel(Model model) {
 		this.model = model;

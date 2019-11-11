@@ -18,7 +18,7 @@ public class ControlPanel extends AppPanel {
 	private JButton northButton, eastButton, westButton, southButton, resetButton;
 	
 	public ControlPanel(Maze maze) {
-		controller = new MazeController(maze);
+		controller = new MazeController(maze, this);
 		this.setLayout(new GridLayout(7, 1));
 		
 		JPanel p = new JPanel();
@@ -71,5 +71,12 @@ public class ControlPanel extends AppPanel {
 		this.add(p);
 		
 		
+	}
+
+	public JTextField getExitDistanceField() {
+		return this.exitDistanceField;
+	}
+	public JTextField getMovesLeftField() {
+		return this.movesLeftField;
 	}
 }

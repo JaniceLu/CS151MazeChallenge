@@ -1,7 +1,5 @@
 package business;
 
-import java.util.Random;
-
 import framework.Command;
 import framework.CommandProcessor;
 import framework.Model;
@@ -21,7 +19,6 @@ public class Maze extends Model {
 	public Maze() {
 		movesLeft = 20;
 		size = 20;
-		Random gen = new Random(System.currentTimeMillis());
 		
 		int exitX, exitY, playerX, playerY;
 		do {
@@ -44,7 +41,7 @@ public class Maze extends Model {
 		
 		movesLeft -= 1;
 		changed();
-//		if(movesLeft == 0) Utilities.error("No moves left");
+		if(movesLeft == 0) Utilities.error("No moves left");
 	}
 	public int calculateExitDistance() {
 		if(exitRoom == null || player == null) return -1;
@@ -64,7 +61,6 @@ public class Maze extends Model {
 		return player;
 	}
 	public int getMovesLeft() {
-		System.out.println("here");
 		return movesLeft;
 	}
 	public int getSize() {

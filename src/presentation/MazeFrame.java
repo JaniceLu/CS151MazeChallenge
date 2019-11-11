@@ -18,7 +18,7 @@ import framework.AppFrame;
 public class MazeFrame extends JFrame {
 	private Maze maze;
 	private MazePanel mazePanel;
-	private EditMenuPanel editMenuPanel;
+	private EditMenuBar editMenuPanel;
 	
 	public MazeFrame(AppFactory factory) {
 		maze = new Maze();
@@ -26,6 +26,7 @@ public class MazeFrame extends JFrame {
 		Container cp = getContentPane();
 		cp.add(mazePanel);
 		
+		this.setJMenuBar(new EditMenuBar(maze));
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle("Maze Challenge");
 		this.setSize(800, 800);

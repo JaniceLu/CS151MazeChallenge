@@ -2,8 +2,16 @@ package framework;
 
 import java.awt.event.*;
 import java.io.*;
+import java.util.Random;
+
 import javax.swing.*;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ * 11/07/2019: JL - Added random number generator based on system time
+ *
+ */
 public class Utilities {
 
 	// enables stack traces and diagnostics
@@ -120,5 +128,11 @@ public class Utilities {
 		return result;
 	}
 
+	// a simple number generator
+	public static int numberGenerator(int bound) {
+		Random seed = new Random(System.currentTimeMillis());
+		return seed.nextInt(bound);
+	}
+	
 	// etc.
 }

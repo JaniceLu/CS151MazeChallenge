@@ -8,6 +8,12 @@ import framework.Model;
 import framework.Utilities;
 import presentation.Heading;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - Created
+ * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
+ *
+ */
 public class Maze extends Model {
 	private Position exitRoom, player;
 	private int movesLeft, size;
@@ -19,10 +25,10 @@ public class Maze extends Model {
 		
 		int exitX, exitY, playerX, playerY;
 		do {
-			exitX = gen.nextInt(size);
-			exitY = gen.nextInt(size);
-			playerX = gen.nextInt(size);
-			playerY = gen.nextInt(size);
+			exitX = Utilities.numberGenerator(size);
+			exitY = Utilities.numberGenerator(size);
+			playerX = Utilities.numberGenerator(size);
+			playerY = Utilities.numberGenerator(size);
 		} while(exitX == playerX && exitY == playerY);
 		
 		exitRoom = new Position(exitX, exitY);

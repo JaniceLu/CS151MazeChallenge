@@ -5,12 +5,13 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
 public class AppFrame extends JFrame implements ActionListener {
 	private Model model;
 	private AppPanel panel;
 	private AppFactory factory;
-	
+		
 	public AppFrame(AppFactory factory) {
 		this.factory = factory;
 		model = factory.makeModel();
@@ -29,13 +30,17 @@ public class AppFrame extends JFrame implements ActionListener {
 	protected JMenuBar createMenuBar() {
 		JMenuBar bar = new JMenuBar();
 		// add file, edit, and help menus
-		JMenu fileMenu = new JMenu();
-		JMenu helpMenu = new JMenu();
-		JMenu editMenu = new JMenu();
-		Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		String[] fileItems = {"New", "Save", "SaveAs", "Open", "Quit"};
+		JMenu fileMenu = Utilities.makeMenu("File", fileItems, this);
+				
+		JMenu editMenu = Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		
+		String[] helpItems = {"About", "Contents"};
+		JMenu helpMenu = Utilities.makeMenu("Help", helpItems, this);
+
 		bar.add(fileMenu);
-		bar.add(helpMenu);
 		bar.add(editMenu);
+		bar.add(helpMenu);
 		
 		return bar;
 	}

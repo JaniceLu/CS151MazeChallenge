@@ -5,8 +5,9 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 
 import business.Maze;
+import framework.AppPanel;
 
-public class MazePanel extends JPanel {
+public class MazePanel extends AppPanel {
 	private Maze maze;
 	private MazeView mazeView;
 	private ControlPanel controlPanel;

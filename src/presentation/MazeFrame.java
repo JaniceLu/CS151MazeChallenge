@@ -8,6 +8,10 @@ import javax.swing.JTextField;
 import business.Maze;
 import framework.AppFrame;
 
+/**
+ * Sample Text
+ *
+ */
 public class MazeFrame extends AppFrame {	
 	public MazeFrame(MazeFactory factory) {
 		super(factory);

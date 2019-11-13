@@ -9,6 +9,7 @@ import javax.swing.JMenuBar;
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/12/2019: WW - Edited createMenuBar method
  */
 public class AppFrame extends JFrame implements ActionListener {
 	private static final long serialVersionUID = 1L;
@@ -37,8 +38,7 @@ public class AppFrame extends JFrame implements ActionListener {
 		// add file, edit, and help menus
 		JMenu fileMenu = new JMenu();
 		JMenu helpMenu = new JMenu();
-		JMenu editMenu = new JMenu();
-		Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		JMenu editMenu = Utilities.makeMenu("Edit", factory.getEditCommands(), this);
 		bar.add(fileMenu);
 		bar.add(helpMenu);
 		bar.add(editMenu);

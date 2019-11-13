@@ -9,15 +9,21 @@ import javax.swing.JPanel;
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/12/2019: WW - Edited
  */
 public class AppPanel extends JPanel implements Observer {
 	protected Model model;
 	protected Set<View> views;
 	protected ActionListener listener;
 	
-	public void update(Observable o, Object arg) {
-		for(View view : views) view.update(model, view);
+	public AppPanel(Model model,ActionListener listener) {
+		setModel(model);
+		this.listener = listener;
+		views = new HashSet<View>();
 	}
+	
+	public void update(Observable o, Object arg) {}
+	
 	public void setModel(Model model) {
 		if(this.model != null) this.model.deleteObserver(this); 
 		this.model = model;

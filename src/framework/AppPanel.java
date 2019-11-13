@@ -12,6 +12,12 @@ public class AppPanel extends JPanel implements Observer {
 	protected Set<View> views = new HashSet<>();
 	protected ActionListener listener;
 	
+	public AppPanel(Model model, ActionListener actionListener) {
+		model.addObserver(this);
+		this.model = model;
+		this.listener = actionListener;
+	}
+	
 	public void update(Observable o, Object arg) {
 		for(View view : views) view.update(model, view);
 	}

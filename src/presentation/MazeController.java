@@ -19,19 +19,14 @@ import framework.CommandProcessor;
  */
 public class MazeController implements ActionListener {
 	private Maze maze;
-	private ControlPanel controlPanel;
 
-	public MazeController(Maze maze, ControlPanel controlPanel) {
+	public MazeController(Maze maze) {
 		super();
 		this.maze = maze;
-		this.controlPanel = controlPanel;
 	}
 
 	public void actionPerformed(ActionEvent ae) {		
-		JTextField exitDistanceField = controlPanel.getExitDistanceField();
-		JTextField movesLeftField = controlPanel.getMovesLeftField();
-		String command = ae.getActionCommand();
-		
+		String command = ae.getActionCommand();		
 		Command c = null;
 		
 		if(command != null) {
@@ -41,10 +36,8 @@ public class MazeController implements ActionListener {
 			else if(command.equals("South")) c = new MoveSouth(maze);
 			else if(command.equals("Reset")) c = new Reset(maze);
 		}
-				
+		
 		CommandProcessor.commandProcessor.execute(c);
-		exitDistanceField.setText(""+maze.calculateExitDistance());
-		movesLeftField.setText(""+maze.getMovesLeft());
 	}
 	
 }

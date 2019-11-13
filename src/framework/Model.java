@@ -11,11 +11,12 @@ public abstract class Model extends Observable implements Serializable {
 		this.fileName = other.fileName;
 		this.unsavedChanges = other.unsavedChanges;
 	}
-	public void changed() {
+	public synchronized void changed() {
 		this.unsavedChanges = true;
 		this.setChanged();
 		this.notifyObservers();
 		this.clearChanged();
+		this.notify();
 	}
 	
 	public boolean hasUnsavedChanges() {

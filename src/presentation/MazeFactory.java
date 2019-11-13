@@ -24,8 +24,7 @@ public class MazeFactory implements AppFactory {
 	public AppPanel makePanel(Model model, ActionListener listener) {
 		AppPanel panel = null;
 		
-		if(model instanceof Maze) panel = new MazePanel((Maze)model);
-		else panel = new AppPanel();
+		if(model instanceof Maze) panel = new MazePanel((Maze)model, listener);
 		
 		return panel;
 	}

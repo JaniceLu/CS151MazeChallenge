@@ -1,11 +1,14 @@
 package presentation;
 
 import java.awt.GridLayout;
+import java.awt.event.ActionListener;
+import java.util.Observable;
 
 import javax.swing.JPanel;
 
 import business.Maze;
 import framework.AppPanel;
+import framework.View;
 
 /**
  * 
@@ -15,21 +18,17 @@ import framework.AppPanel;
  *
  */
 public class MazePanel extends AppPanel {
-	private Maze maze;
-	private MazeView mazeView;
 	private ControlPanel controlPanel;
+	private MazeView mazeView;	
 	
-	public MazePanel(Maze maze) {
-		this.maze = maze;
+	public MazePanel(Maze maze, ActionListener actionListener) {
+		super(maze, actionListener);
+		
+		this.controlPanel = new ControlPanel(maze, actionListener);
 		this.mazeView = new MazeView(maze);
-		this.controlPanel = new ControlPanel(maze);
 		
 		this.setLayout(new GridLayout(1, 2));
 		this.add(controlPanel);
 		this.add(mazeView);
-	}
-	
-	public ControlPanel getControlPanel() {
-		return controlPanel;
 	}
 }

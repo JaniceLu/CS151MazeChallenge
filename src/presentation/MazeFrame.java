@@ -8,26 +8,12 @@ import javax.swing.JTextField;
 import business.Maze;
 import framework.AppFrame;
 
-/**
- * Sample Text
- *
- */
 public class MazeFrame extends AppFrame {	
 	public MazeFrame(MazeFactory factory) {
 		super(factory);
 	}
 	
 	public void actionPerformed(ActionEvent ae) {
-		super.actionPerformed(ae);
-		Maze maze = (Maze) model;
-		MazePanel mazePanel = (MazePanel) panel;
-		
-		ControlPanel controlPanel = mazePanel.getControlPanel();
-		
-		JTextField exitDistanceField = controlPanel.getExitDistanceField();
-		JTextField movesLeftField = controlPanel.getMovesLeftField();
-
-		exitDistanceField.setText(""+maze.calculateExitDistance());
-		movesLeftField.setText(""+maze.getMovesLeft());
+		super.actionPerformed(ae);		
 	}
 }

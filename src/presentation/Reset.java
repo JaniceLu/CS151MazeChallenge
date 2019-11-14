@@ -11,12 +11,11 @@ public class Reset extends Command{
     private Maze maze;
     
     public Reset(Maze maze) {
-        Maze copy = new Maze();
-        copy.copy(maze);
-        this.maze = copy;
+    	this.maze = maze;
     }
 
     public void execute() {
         maze.copy(maze);
+        maze.resetMaze(maze.getInitialPlayerPosition());
     }
 }

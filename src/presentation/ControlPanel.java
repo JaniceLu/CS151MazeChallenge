@@ -81,5 +81,12 @@ public class ControlPanel extends AppPanel {
 		Maze maze = (Maze)model;
 		exitDistanceField.setText(""+maze.calculateExitDistance());
 		movesLeftField.setText(""+maze.getMovesLeft());
+		
+		if(maze.isDisabled()) {
+			northButton.setEnabled(false);
+			eastButton.setEnabled(false);
+			westButton.setEnabled(false);
+			southButton.setEnabled(false);
+		}
 	}
 }

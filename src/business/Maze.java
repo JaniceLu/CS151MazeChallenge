@@ -8,12 +8,10 @@ import presentation.Heading;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
+ * 11/14/2019: NP - Added inform message for when Player escapes
  *
  */
 public class Maze extends Model {
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = -961630536196416271L;
 	private Position exitRoom, player;
 	private int movesLeft, size;
@@ -52,7 +50,8 @@ public class Maze extends Model {
 		
 		movesLeft -= 1;
 		changed();
-		if(movesLeft == 0) Utilities.error("No moves left");
+		if(movesLeft == 0) Utilities.inform("No moves left");
+		if(exitRoom.getX() == player.getX() && exitRoom.getY() == player.getY()) Utilities.inform("You escaped!");
 	}
 	public int calculateExitDistance() {
 		if(exitRoom == null || player == null) return -1;

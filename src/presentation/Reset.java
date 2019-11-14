@@ -13,7 +13,7 @@ import framework.*;
 /**
  * Change History:
  * 11/7/2019: JL - created
- * 11/12/2019: JL - added execute contents to reset the maze
+ * 11/14/2019: JL - added execute contents to reset the maze
  */
 public class Reset extends Command{
     private Maze maze;

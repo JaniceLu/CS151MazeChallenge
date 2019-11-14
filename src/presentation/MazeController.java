@@ -32,7 +32,6 @@ public class MazeController implements ActionListener {
 			else if(command.equals("South")) c = new MoveSouth(maze);
 			else if(command.equals("Reset")) c = new Reset(maze);
 		}
-		
 		CommandProcessor.commandProcessor.execute(c);
 	}
 	

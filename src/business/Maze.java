@@ -11,13 +11,14 @@ import presentation.SetPosition;
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
  * 11/14/2019: NP - Added inform message for when Player escapes, added bound checks
- *
+ * 11/14/2019: JL - Added reset maze functionality and a private setter
  */
 public class Maze extends Model {
 	private static final long serialVersionUID = -961630536196416271L;
 	private Position exitRoom, player;
 	private int movesLeft, size;
-	
+	private Position initialPlayerPosition;
+
 	public Maze() {
 		movesLeft = 20;
 		size = 20;
@@ -32,6 +33,21 @@ public class Maze extends Model {
 		
 		exitRoom = new Position(exitX, exitY);
 		player = new Position(playerX, playerY);
+		initialPlayerPosition = new Position(playerX, playerY);
+	}
+
+	/**
+	 * used for resetting the Maze to the initial position
+	 * @param player player position within the maze
+	 */
+	public void resetMaze(Position player) {
+		movesLeft = 20;
+
+		int playerX = player.getX();
+		int playerY = player.getY();
+
+		setPlayer(playerX, playerY);
+		changed();
 	}
 	
 	public void copy(Model other) {
@@ -43,6 +59,7 @@ public class Maze extends Model {
 		player = m.getPlayer();
 		changed();
 	}
+
 	public void move(Heading heading){
 		int playerX = player.getX();
 		int playerY = player.getY();
@@ -59,6 +76,7 @@ public class Maze extends Model {
 		if(movesLeft == 0) Utilities.inform("No moves left");
 		if(exitRoom.getX() == player.getX() && exitRoom.getY() == player.getY()) Utilities.inform("You escaped!");
 	}
+
 	public int calculateExitDistance() {
 		if(exitRoom == null || player == null) return -1;
 		
@@ -73,9 +91,20 @@ public class Maze extends Model {
 	public Position getExitRoom() {
 		return exitRoom;
 	}
+	
 	public Position getPlayer() {
 		return player;
 	}
+
+	private void setPlayer(int x, int y) {
+		player.setX(x);
+		player.setY(y);
+	}
+
+	public Position getInitialPlayer() {
+		return initialPlayerPosition;
+	}
+
 	public int getMovesLeft() {
 		return movesLeft;
 	}

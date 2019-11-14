@@ -1,22 +1,28 @@
 package presentation;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
 import business.Maze;
+import business.Position;
 import framework.*;
 
 /**
  * Change History:
  * 11/7/2019: JL - created
+ * 11/12/2019: JL - added execute contents to reset the maze
  */
 public class Reset extends Command{
     private Maze maze;
-    
+
     public Reset(Maze maze) {
-        Maze copy = new Maze();
-        copy.copy(maze);
-        this.maze = copy;
+        this.maze = maze;
     }
 
     public void execute() {
-        maze.copy(maze);
+        maze.resetMaze(maze.getInitialPlayer());
     }
 }

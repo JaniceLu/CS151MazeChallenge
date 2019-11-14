@@ -1,6 +1,12 @@
 package business;
 
-public class Position {
+import java.io.Serializable;
+
+public class Position implements Serializable {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 3219829151520700350L;
 	private int x, y;
 	
 	public Position(int x, int y) {

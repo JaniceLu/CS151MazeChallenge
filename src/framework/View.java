@@ -5,6 +5,10 @@ import java.util.Observer;
 import javax.swing.JComponent;
 
 public abstract class View extends JComponent implements Observer {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -4603713846860940720L;
 	protected Model model;
 
 	public View(Model model) {
@@ -23,6 +27,7 @@ public abstract class View extends JComponent implements Observer {
 		this.model = model;
 		if(this.model != null) {
 			this.model.addObserver(this);
+			System.out.println("here");
 			this.update(model, null);
 		}
 	}

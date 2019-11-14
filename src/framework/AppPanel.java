@@ -22,11 +22,14 @@ public class AppPanel extends JPanel implements Observer {
 		for(View view : views) view.update(model, view);
 	}
 	public void setModel(Model model) {
-		if(this.model != null) this.model.deleteObserver(this); 
+		model.deleteObserver(this);
 		this.model = model;
-		if(this.model != null) this.model.addObserver(this);
-		for(View view : views) view.setModel(model);
+		model.addObserver(this);
+		for(View view : views) {
+			view.setModel(model);
+		}
 	}
+	
 	public void addView(View view) {
 		super.add(view);
 		this.views.add(view);

@@ -5,11 +5,6 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
-import javax.swing.JTextField;
-
-import business.Maze;
-import presentation.ControlPanel;
-import presentation.MazePanel;
 
 /**
  * Change History:
@@ -65,11 +60,8 @@ public class AppFrame extends JFrame implements ActionListener {
 			Model newModel = Utilities.open(model);
 			setModel(newModel);
 		} else if(command.equals("New")) {
-			System.out.println("alpha");
-			
 			Utilities.saveChanges(model);
 			setModel(factory.makeModel());
-			model.setUnsavedChanges(false);
 		} else if (command.equals("Quit")) {
 			Utilities.saveChanges(model);
 			System.exit(1);
@@ -84,8 +76,7 @@ public class AppFrame extends JFrame implements ActionListener {
 	}
 
 	public void setModel(Model model) {
-		this.model = model;
-		panel.setModel(model);
+		this.model.copy(model);
 	}
 	
 }

@@ -3,10 +3,6 @@ package presentation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JMenuItem;
-import javax.swing.JTextField;
-
 import business.Maze;
 import framework.Command;
 import framework.CommandProcessor;

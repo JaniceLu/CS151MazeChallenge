@@ -2,13 +2,9 @@ package presentation;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionListener;
-import java.util.Observable;
-
-import javax.swing.JPanel;
 
 import business.Maze;
 import framework.AppPanel;
-import framework.View;
 
 /**
  * 

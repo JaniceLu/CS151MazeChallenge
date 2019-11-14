@@ -1,14 +1,11 @@
 package presentation;
 
-import java.awt.Container;
 import java.awt.event.ActionEvent;
 
-import javax.swing.JTextField;
-
-import business.Maze;
 import framework.AppFrame;
 
 public class MazeFrame extends AppFrame {	
+
 	public MazeFrame(MazeFactory factory) {
 		super(factory);
 	}

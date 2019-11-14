@@ -1,7 +1,7 @@
 package presentation;
 
 import business.Maze;
-import framework.Command;
+import framework.*;
 
 /**
  * Change History:
@@ -11,10 +11,12 @@ public class Reset extends Command{
     private Maze maze;
     
     public Reset(Maze maze) {
-        this.maze = maze;
+        Maze copy = new Maze();
+        copy.copy(maze);
+        this.maze = copy;
     }
 
     public void execute() {
-
+        maze.copy(maze);
     }
 }

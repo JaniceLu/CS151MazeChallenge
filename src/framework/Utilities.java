@@ -10,7 +10,7 @@ import javax.swing.*;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Added random number generator based on system time
- *
+ * 11/12/2019: JL - Added changes to confirm and savechanges 
  */
 public class Utilities {
 
@@ -20,8 +20,12 @@ public class Utilities {
 	// asks user a yes/no question
 	public static boolean confirm(String query) {
 		int result = JOptionPane.showConfirmDialog(null,
-				query, "choose one", JOptionPane.YES_NO_OPTION);
-		return result == 1;
+				query, "Choose One", JOptionPane.YES_NO_OPTION);
+		if(result == JOptionPane.YES_OPTION) {
+			return false;
+		} else {
+			return true;
+		}
 	}
 
 	// asks user for info
@@ -60,22 +64,33 @@ public class Utilities {
 				JOptionPane.ERROR_MESSAGE);
 	}
 
-	// asks user save changes?
+	
+	/**
+	 * Asks users if they would like to save changes
+	 * YES = continue without saving
+	 * NO = save before continuing
+	 */
 	public static void saveChanges(Model model) {
 		if (model.hasUnsavedChanges() &&
-		      Utilities.confirm("current model has unsaved changes, continue?"))
+		      Utilities.confirm("Current model has unsaved changes, continue?"))
 			Utilities.save(model, false);
 	}
 
 	// asks user for a file name
-	public static String getFileName(String fName) {
-		JFileChooser chooser = new JFileChooser();
+	public static String getFileName(String fName, String operationName) {
 		String result = null;
+		JFileChooser chooser = new JFileChooser();
+		int returnVal = 0;
+		chooser.setDialogTitle(operationName);
 		if (fName != null) {
 		   // open chooser in directory of fName
            chooser.setCurrentDirectory(new File(fName));
 		}
-		int returnVal = chooser.showOpenDialog(null);
+		if(operationName.equals("Save")) {
+			returnVal = chooser.showSaveDialog(null);
+		} else {
+			returnVal = chooser.showOpenDialog(null);
+		}
 		if(returnVal == JFileChooser.APPROVE_OPTION) {
 			result= chooser.getSelectedFile().getPath();
 		}
@@ -86,7 +101,7 @@ public class Utilities {
 	public static void save(Model model, Boolean saveAs) {
 		String fName = model.getFileName();
 		if (fName == null || saveAs) {
-			fName = Utilities.getFileName(fName);
+			fName = Utilities.getFileName(fName, "Save");
 			model.setFileName(fName);
 		}
 		try {
@@ -104,7 +119,7 @@ public class Utilities {
 	// open model
 	public static Model open(Model model) {
 		saveChanges(model);
-		String fName = Utilities.getFileName(model.getFileName());
+		String fName = Utilities.getFileName(model.getFileName(), "Open");
 		Model newModel = null;
 		try {
 			ObjectInputStream is =

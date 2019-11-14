@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.util.Observable;
 
 public abstract class Model extends Observable implements Serializable {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1627567944966918700L;
 	private String fileName = null;
 	private boolean unsavedChanges = false;
 

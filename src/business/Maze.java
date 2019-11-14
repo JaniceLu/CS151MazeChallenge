@@ -1,7 +1,5 @@
 package business;
 
-import framework.Command;
-import framework.CommandProcessor;
 import framework.Model;
 import framework.Utilities;
 import presentation.Heading;
@@ -13,6 +11,10 @@ import presentation.Heading;
  *
  */
 public class Maze extends Model {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = -961630536196416271L;
 	private Position exitRoom, player;
 	private int movesLeft, size;
 	
@@ -32,6 +34,15 @@ public class Maze extends Model {
 		player = new Position(playerX, playerY);
 	}
 	
+	public void copy(Model other) {
+		super.copy(other);
+		Maze m = (Maze) other;
+		movesLeft = m.getMovesLeft();
+		size = m.getSize();
+		exitRoom = m.getExitRoom();
+		player = m.getPlayer();
+		changed();
+	}
 	public void move(Heading heading){
 		
 		if(heading == Heading.NORTH) player.setY(player.getY()-1);

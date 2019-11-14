@@ -1,7 +1,5 @@
 package presentation;
 
-import framework.AppFrame;
-
 /**
  * Change History:
  * 10/31/2019: NP - Created

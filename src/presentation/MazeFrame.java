@@ -1,34 +1,42 @@
 package presentation;
 
-import java.awt.Container;
-import javax.swing.JFrame;
-
+import java.awt.Color;
+import java.awt.GridLayout;
 import business.Maze;
+import framework.AppFrame;
 
 /**
  * Change History:
  * 10/31/2019: NP - Created
  * 11/7/2019: JL - Added cosmetic menu bar to frame
+ * 11/12/2019: WW - Edited
  */
-public class MazeFrame extends JFrame {
+public class MazeFrame extends AppFrame {
 	private Maze maze;
 	private MazePanel mazePanel;
+    private MazeView mazeView;
 	private EditMenuBar editMenu;
+	public static MazeFactory mazeF= new MazeFactory();
+	public static String[] moveButton = mazeF.getEditCommands();
+	
 	
 	public MazeFrame() {
+		super(mazeF);
+		setBackground(Color.DARK_GRAY);
 		maze = new Maze();
-		mazePanel = new MazePanel(maze);
-		Container cp = getContentPane();
-		cp.add(mazePanel);
-		setJMenuBar(new EditMenuBar());
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setTitle("Maze Challenge");
-		this.setSize(800, 800);
-		this.pack();
+		editMenu=new EditMenuBar();
+		setJMenuBar(editMenu);
+		
+		setLayout(new GridLayout(1, 2));
+		MazeController mC=new MazeController(maze);
+		mazePanel = new MazePanel(maze, mC);
+		mazeView= new MazeView(maze);
+		add(mazePanel);
+        add(mazeView);
 	}
 	
 	public static void main(String[] args) {
-		MazeFrame mazeFrame = new MazeFrame();
-		mazeFrame.setVisible(true);
+		AppFrame app = new AppFrame(new MazeFactory());
+		app.display();
 	}
 }

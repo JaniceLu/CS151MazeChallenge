@@ -43,7 +43,6 @@ public class MazeFactory implements AppFactory {
 			else if(type.equals("South")) c = new MoveSouth((Maze)model);
 			else if(type.equals("Reset")) c = new Reset((Maze)model);
 		}
-		
 		return c;
 	}
 

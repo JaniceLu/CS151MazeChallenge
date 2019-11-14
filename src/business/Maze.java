@@ -12,7 +12,6 @@ import presentation.SetPosition;
  * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
  * 11/14/2019: NP - Added inform message for when Player escapes, added bound checks
  * 11/14/2019: JL - Added reset maze functionality and a private setter
- *
  */
 public class Maze extends Model {
 	private static final long serialVersionUID = -961630536196416271L;
@@ -37,9 +36,9 @@ public class Maze extends Model {
 		player = new Position(playerX, playerY);
 		initialPlayerPosition = new Position(playerX, playerY);
 	}
-	
+
 	/**
-	 * Used for resetting the Maze to the initial position'
+	 * Used for resetting the Maze to the initial position
 	 * @param player player position within the maze
 	 */
 	public void resetMaze(Position player) {
@@ -62,6 +61,7 @@ public class Maze extends Model {
 		player = m.getPlayer();
 		changed();
 	}
+
 	public void move(Heading heading){
 		int playerX = player.getX();
 		int playerY = player.getY();
@@ -87,6 +87,7 @@ public class Maze extends Model {
 			changed();	// needed to redraw properly to the user
 		}
 	}
+
 	public int calculateExitDistance() {
 		if(exitRoom == null || player == null) return -1;
 		
@@ -106,6 +107,7 @@ public class Maze extends Model {
 	public Position getExitRoom() {
 		return exitRoom;
 	}
+	
 	public Position getPlayer() {
 		return player;
 	}

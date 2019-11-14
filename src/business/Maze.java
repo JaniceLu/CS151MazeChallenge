@@ -1,14 +1,16 @@
 package business;
 
+import framework.CommandProcessor;
 import framework.Model;
 import framework.Utilities;
 import presentation.Heading;
+import presentation.SetPosition;
 
 /**
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
- * 11/14/2019: NP - Added inform message for when Player escapes
+ * 11/14/2019: NP - Added inform message for when Player escapes, added bound checks
  *
  */
 public class Maze extends Model {
@@ -42,12 +44,16 @@ public class Maze extends Model {
 		changed();
 	}
 	public void move(Heading heading){
+		int playerX = player.getX();
+		int playerY = player.getY();
+		SetPosition command = new SetPosition(player, playerX, playerY);
+
+		if(heading == Heading.NORTH && playerY > 0) command = new SetPosition(player, playerX, playerY-1);
+		else if(heading == Heading.SOUTH && playerY < size) command = new SetPosition(player, playerX, playerY+1);
+		else if(heading == Heading.EAST && playerX < size) command = new SetPosition(player, playerX+1, playerY);
+		else if(heading == Heading.WEST && playerX > 0) command = new SetPosition(player, playerX, playerY-1);
 		
-		if(heading == Heading.NORTH) player.setY(player.getY()-1);
-		else if(heading == Heading.SOUTH) player.setY(player.getY()+1);
-		else if(heading == Heading.EAST) player.setX(player.getX()+1);
-		else if(heading == Heading.WEST) player.setX(player.getX()-1);
-		
+		CommandProcessor.commandProcessor.execute(command);
 		movesLeft -= 1;
 		changed();
 		if(movesLeft == 0) Utilities.inform("No moves left");

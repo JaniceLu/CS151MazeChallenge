@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 /**
  * Change History:
  * 10/31/2019: NP - created
+ * 11/10/2019: JL - fixed setModel method to properly set observers/views in the case
+ * 					of New/Open/Save operations
  */
 public class AppPanel extends JPanel implements Observer {
 	protected Model model;

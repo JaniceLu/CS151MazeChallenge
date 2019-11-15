@@ -10,6 +10,8 @@ import javax.swing.*;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Added random number generator based on system time
+ * 11/10/2019: JL - getfilename has been changed to properly check with method called it 
+ * 					(between save and open)
  * 11/12/2019: JL - Added changes to confirm and savechanges 
  */
 public class Utilities {

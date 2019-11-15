@@ -11,7 +11,7 @@ import framework.CommandProcessor;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/10/2019: NP - Extended to handle move commands
- *
+ * 11/14/2019: JL - changed commandprocessor access to be static
  */
 public class MazeController implements ActionListener {
 	private Maze maze;
@@ -32,7 +32,7 @@ public class MazeController implements ActionListener {
 			else if(command.equals("South")) c = new MoveSouth(maze);
 			else if(command.equals("Reset")) c = new Reset(maze);
 		}
-		CommandProcessor.commandProcessor.execute(c);
+		CommandProcessor.execute(c);
 	}
 	
 }

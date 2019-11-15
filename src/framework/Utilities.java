@@ -132,18 +132,7 @@ public class Utilities {
 		}
 		return newModel;
 	}
-
-	// a simple menu maker
-	public static JMenu makeMenu(String name, String[] items, ActionListener handler) {
-		JMenu result = new JMenu(name);
-		for(int i = 0; i < items.length; i++) {
-			JMenuItem item = new JMenuItem(items[i]);
-			item.addActionListener(handler);
-			result.add(item);
-		}
-		return result;
-	}
-
+	
 	// a simple number generator
 	public static int numberGenerator(int bound) {
 		Random seed = new Random(System.currentTimeMillis());

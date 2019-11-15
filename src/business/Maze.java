@@ -79,7 +79,7 @@ public class Maze extends Model {
 			disabled = true;
 		}
 		
-		CommandProcessor.commandProcessor.execute(command);		
+		CommandProcessor.execute(command);		
 		changed();
 		
 		if(exitRoom.getX() == player.getX() && exitRoom.getY() == player.getY()) {

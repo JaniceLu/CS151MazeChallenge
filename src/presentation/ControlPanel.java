@@ -31,7 +31,7 @@ public class ControlPanel extends AppPanel {
 		super(maze, listener);
 		controller = new MazeController(maze);
 		this.setLayout(new GridLayout(7, 1));
-		
+
 		JPanel p = new JPanel();
 		p.add(new JLabel("Exit Distance"));
 		exitDistanceField = new JTextField(""+maze.calculateExitDistance(), 10);

@@ -1,0 +1,43 @@
+package presentation;
+
+import java.awt.event.ActionListener;
+
+import business.Maze;
+import framework.AppFactory;
+import framework.AppPanel;
+import framework.Command;
+import framework.Model;
+import framework.Utilities;
+/**
+ * Change History:
+ * 11/12/2019: WW - Created. makeEditCommand and makePanel need work
+ */
+public class MazeFactory implements AppFactory {
+	  public Model makeModel() { return new Maze(); }
+	  public String[] getEditCommands() {
+	     return new String[] { "North", "East", "West", "South", "Reset"};
+	  }
+	  public Command makeEditCommand(Model model, String type) {
+	     if (type == "Set Height") return new SetHeight(model);
+	     // etc.
+	  }
+	  public String getTitle() { return "Maze Challenge"; }
+	  // etc.
+	@Override
+	public AppPanel makePanel(Model model, ActionListener listener) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public String[] getHelp() {
+		// TODO Auto-generated method stub
+		Utilities.inform("Locate the escape room in the number of alloted moves");
+		return null;
+	}
+	@Override
+	public String about() {
+		// TODO Auto-generated method stub
+		Utilities.inform("Maze Challenge version 1.0 by Leopard Designs @ 2019");
+		return null;
+	}
+	}

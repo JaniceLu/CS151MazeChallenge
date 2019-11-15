@@ -13,6 +13,7 @@ import javax.swing.*;
  * 11/10/2019: JL - getfilename has been changed to properly check with method called it 
  * 					(between save and open)
  * 11/12/2019: JL - Added changes to confirm and savechanges 
+ * 11/14/2019: JL - Readded makeMenu method, got lost in branch merge
  */
 public class Utilities {
 
@@ -131,6 +132,17 @@ public class Utilities {
 			Utilities.error(err);
 		}
 		return newModel;
+	}
+	
+	// a simple menu maker
+	public static JMenu makeMenu(String name, String[] items, ActionListener handler) {
+		JMenu result = new JMenu(name);
+		for(int i = 0; i < items.length; i++) {
+			JMenuItem item = new JMenuItem(items[i]);
+			item.addActionListener(handler);
+			result.add(item);
+		}
+		return result;
 	}
 	
 	// a simple number generator

@@ -7,6 +7,10 @@ import java.util.Observer;
 import java.util.Set;
 import javax.swing.JPanel;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - created
+ */
 public class AppPanel extends JPanel implements Observer {
 	protected Model model;
 	protected Set<View> views = new HashSet<>();
@@ -21,6 +25,7 @@ public class AppPanel extends JPanel implements Observer {
 	public void update(Observable o, Object arg) {
 		for(View view : views) view.update(model, view);
 	}
+	
 	public void setModel(Model model) {
 		model.deleteObserver(this);
 		this.model = model;

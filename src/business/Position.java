@@ -2,6 +2,10 @@ package business;
 
 import java.io.Serializable;
 
+/**
+ * Change History: 
+ * 10/31/2019: NP - created
+ */
 public class Position implements Serializable {
 	/**
 	 *

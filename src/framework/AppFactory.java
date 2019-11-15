@@ -2,6 +2,10 @@ package framework;
 
 import java.awt.event.ActionListener;
 
+/**
+ * Change History:
+ * 10/31/2019: NP - created
+ */
 public interface AppFactory {
 	public Model makeModel();
 	public AppPanel makePanel(Model model, ActionListener listener);

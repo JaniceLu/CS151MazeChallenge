@@ -64,7 +64,6 @@ public class Utilities {
 				JOptionPane.ERROR_MESSAGE);
 	}
 
-	
 	/**
 	 * Asks users if they would like to save changes
 	 * YES = continue without saving
@@ -148,6 +147,4 @@ public class Utilities {
 		Random seed = new Random(System.currentTimeMillis());
 		return seed.nextInt(bound);
 	}
-	
-	// etc.
 }

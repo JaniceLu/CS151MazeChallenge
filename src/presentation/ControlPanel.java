@@ -15,6 +15,13 @@ import business.Maze;
 import framework.AppPanel;
 import framework.View;
 
+/**
+ * Change History: 
+ * 10/31/2019: NP - created
+ * 11/10/2019: NP - changed implementation to update fields using ControlPanel class
+ * 11/14/2019: NP - added disabled clause to disable buttons after win/loss
+ * 11/14/2918: JL - added clause to re-enable buttons if user decides to reset game
+ */
 public class ControlPanel extends AppPanel {
 	private MazeController controller;
 	private JTextField exitDistanceField, movesLeftField;
@@ -87,6 +94,11 @@ public class ControlPanel extends AppPanel {
 			eastButton.setEnabled(false);
 			westButton.setEnabled(false);
 			southButton.setEnabled(false);
+		} else if(!maze.isDisabled()){
+			northButton.setEnabled(true);
+			eastButton.setEnabled(true);
+			westButton.setEnabled(true);
+			southButton.setEnabled(true);
 		}
 	}
 }

@@ -3,6 +3,11 @@ package framework;
 import java.io.Serializable;
 import java.util.Observable;
 
+/**
+ * Change history:
+ * 10/31/2019: NP - created
+ * 11/9/2019: JL - added serialversionUID for serialization/deserialization
+ */
 public abstract class Model extends Observable implements Serializable {
 	/**
 	 *

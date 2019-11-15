@@ -11,7 +11,7 @@ import javax.swing.JMenuBar;
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Modified createMenuBar() to display all options
  * 11/10/2019: NP - Changed createMenuBar() implementation 
- *
+ * 11/12/2019: JL - Modified setModel to use copy() 
  */
 public class AppFrame extends JFrame implements ActionListener {
 	protected Model model;

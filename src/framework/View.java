@@ -4,6 +4,12 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JComponent;
 
+/**
+ * Change History: 
+ * 10/31/2019: NP - created
+ * 11/10/2019: JL - added serialversionuid for serialization/deserialization,
+ * 					removed comment from update()
+ */
 public abstract class View extends JComponent implements Observer {
 	/**
 	 *
@@ -27,7 +33,6 @@ public abstract class View extends JComponent implements Observer {
 		this.model = model;
 		if(this.model != null) {
 			this.model.addObserver(this);
-			System.out.println("here");
 			this.update(model, null);
 		}
 	}

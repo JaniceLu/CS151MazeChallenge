@@ -3,6 +3,10 @@ package presentation;
 import business.Position;
 import framework.Command;
 
+/**
+ * Change History: 
+ * 10/30/2019: NP - created
+ */
 public class SetPosition extends Command {
 	private Position position;
 	private int x, y;

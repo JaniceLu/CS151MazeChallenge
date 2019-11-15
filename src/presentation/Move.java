@@ -6,7 +6,7 @@ import framework.Command;
 /**
  * Change History:
  * 10/31/2019: NP - Created
- * 11/7/2019: JL - consolidated Move classes into one file
+ * 11/7/2019: JL - consolidated all Move classes into one file
  */
 public abstract class Move extends Command {
 	protected Heading heading;

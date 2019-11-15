@@ -2,16 +2,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - MazeFrame",
+            "name": "CodeLens (Launch) - MazeChallenge",
             "request": "launch",
-            "mainClass": "mazeChallenge/presentation.MazeFrame",
-            "projectName": "mazeChallenge"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ControlPanelTest",
-            "request": "launch",
-            "mainClass": "mazeChallenge/test.ControlPanelTest",
+            "mainClass": "mazeChallenge/presentation.MazeChallenge",
             "projectName": "mazeChallenge"
         }
     ]

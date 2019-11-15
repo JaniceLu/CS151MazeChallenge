@@ -3,9 +3,6 @@ package presentation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JMenuItem;
-
 import business.Maze;
 import framework.Command;
 import framework.CommandProcessor;
@@ -13,6 +10,8 @@ import framework.CommandProcessor;
 /**
  * Change History:
  * 10/31/2019: NP - Created
+ * 11/10/2019: NP - Extended to handle move commands
+ * 11/14/2019: JL - changed commandprocessor access to be static
  */
 public class MazeController implements ActionListener {
 	private Maze maze;
@@ -22,22 +21,18 @@ public class MazeController implements ActionListener {
 		this.maze = maze;
 	}
 
-	public void actionPerformed(ActionEvent ae) {
-		JButton button = null;
-		JMenuItem menu = null;
-		String command = ae.getActionCommand();
-		
-		if(ae.getSource() instanceof JButton) button = (JButton)ae.getSource();
-		else if(ae.getSource() instanceof JMenuItem) menu = (JMenuItem)ae.getSource();
-		
+	public void actionPerformed(ActionEvent ae) {		
+		String command = ae.getActionCommand();		
 		Command c = null;
-		if(command.equals("North")) c = new MoveNorth(maze);
-		else if(command.equals("East")) c = new MoveEast(maze);
-		else if(command.equals("West")) c = new MoveWest(maze);
-		else if(command.equals("South")) c = new MoveSouth(maze);
-		else if(command.equals("Reset")) System.out.println("To be implemented.");
 		
-		CommandProcessor.commandProcessor.execute(c);
+		if(command != null) {
+			if(command.equals("North")) c = new MoveNorth(maze); 
+			else if(command.equals("East")) c = new MoveEast(maze);
+			else if(command.equals("West")) c = new MoveWest(maze);
+			else if(command.equals("South")) c = new MoveSouth(maze);
+			else if(command.equals("Reset")) c = new Reset(maze);
+		}
+		CommandProcessor.execute(c);
 	}
 	
 }

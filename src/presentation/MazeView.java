@@ -14,7 +14,8 @@ import framework.View;
 
 /**
  * Change History:
- * 10/31/2019: NP - Created
+ * 10/31/2019: NP - created
+ *
  */
 public class MazeView extends View {
 	public static Boolean TESTING = true;

@@ -4,10 +4,15 @@ import java.io.Serializable;
 import java.util.Observable;
 
 /**
- * Change History:
- * 10/31/2019: NP - Created
+ * Change history:
+ * 10/31/2019: NP - created
+ * 11/9/2019: JL - added serialversionUID for serialization/deserialization
  */
 public abstract class Model extends Observable implements Serializable {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1627567944966918700L;
 	private String fileName = null;
 	private boolean unsavedChanges = false;
 
@@ -15,11 +20,13 @@ public abstract class Model extends Observable implements Serializable {
 		this.fileName = other.fileName;
 		this.unsavedChanges = other.unsavedChanges;
 	}
-	public void changed() {
+	
+	public synchronized void changed() {
 		this.unsavedChanges = true;
 		this.setChanged();
 		this.notifyObservers();
 		this.clearChanged();
+		this.notify();
 	}
 	
 	public boolean hasUnsavedChanges() {

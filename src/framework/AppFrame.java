@@ -9,21 +9,22 @@ import javax.swing.JMenuBar;
 /**
  * Change History:
  * 10/31/2019: NP - Created
- * 11/12/2019: WW - Edited createMenuBar method
+ * 11/06/2019: WW - Created createMenuBar method
+ * 11/07/2019: JL - Modified createMenuBar() to display all options
+ * 11/10/2019: NP - Changed createMenuBar() implementation 
+ * 11/12/2019: JL - Modified setModel to use copy() 
  */
 public class AppFrame extends JFrame implements ActionListener {
-	private static final long serialVersionUID = 1L;
-	
-	private Model model;
-	private AppPanel panel;
+	protected Model model;
+	protected AppPanel panel;
 	private AppFactory factory;
 	
 	public AppFrame(AppFactory factory) {
 		this.factory = factory;
 		model = factory.makeModel();
 		panel = factory.makePanel(model, this);
-		this.getContentPane().add(panel);
 		this.setJMenuBar(createMenuBar());
+		this.getContentPane().add(panel);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setTitle(factory.getTitle());
 		this.setSize(500, 500);
@@ -35,13 +36,18 @@ public class AppFrame extends JFrame implements ActionListener {
 	
 	protected JMenuBar createMenuBar() {
 		JMenuBar bar = new JMenuBar();
+		
 		// add file, edit, and help menus
-		JMenu fileMenu = new JMenu();
-		JMenu helpMenu = new JMenu();
+		String[] fileMenuItems = new String[] {"New", "Save", "SaveAs", "Open", "Quit"};
+		String[] helpMenuItems = new String[] {"About", "Help"};
+		
+		JMenu fileMenu = Utilities.makeMenu("File", fileMenuItems, this);
 		JMenu editMenu = Utilities.makeMenu("Edit", factory.getEditCommands(), this);
+		JMenu helpMenu = Utilities.makeMenu("Help", helpMenuItems, this);
+		
 		bar.add(fileMenu);
-		bar.add(helpMenu);
 		bar.add(editMenu);
+		bar.add(helpMenu);
 		
 		return bar;
 	}
@@ -57,7 +63,6 @@ public class AppFrame extends JFrame implements ActionListener {
 		} else if(command.equals("New")) {
 			Utilities.saveChanges(model);
 			setModel(factory.makeModel());
-			model.setUnsavedChanges(false);
 		} else if (command.equals("Quit")) {
 			Utilities.saveChanges(model);
 			System.exit(1);
@@ -70,12 +75,9 @@ public class AppFrame extends JFrame implements ActionListener {
 			CommandProcessor.commandProcessor.execute(c);
 		}
 	}
-	
-
 
 	public void setModel(Model model) {
-		this.model = model;
-		panel.setModel(model);
+		this.model.copy(model);
 	}
 	
 }

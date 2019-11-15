@@ -1,10 +1,18 @@
 package business;
 
+import java.io.Serializable;
+
 /**
- * Change History:
- * 10/31/2019: NP - Created
+ * Change History: 
+ * 10/31/2019: NP - created
+ * 11/10/2019: JL - Position now implements Serializable for saving Position information,
+ * 					also added serialversionuid
  */
-public class Position {
+public class Position implements Serializable {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 3219829151520700350L;
 	private int x, y;
 	
 	public Position(int x, int y) {

@@ -5,6 +5,8 @@ import java.io.Serializable;
 /**
  * Change History: 
  * 10/31/2019: NP - created
+ * 11/10/2019: JL - Position now implements Serializable for saving Position information,
+ * 					also added serialversionuid
  */
 public class Position implements Serializable {
 	/**

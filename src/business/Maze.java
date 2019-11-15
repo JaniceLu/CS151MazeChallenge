@@ -10,6 +10,7 @@ import presentation.SetPosition;
  * Change History:
  * 10/31/2019: NP - Created
  * 11/07/2019: JL - Changed Player and Exit Position generation by using Utilities
+ * 11/10/2019: JL - Added copy method for use in New/Open/Save/SaveAs utilities
  * 11/14/2019: NP - Added inform message for when Player escapes, added bound checks
  * 11/14/2019: JL - Added reset maze functionality and a private setter
  */
